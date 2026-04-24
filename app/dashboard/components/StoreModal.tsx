@@ -30,17 +30,17 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic Kits',
         items: [
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$175.00' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$210.00' },
           { name: 'KIT - 2DMG/MC JOYSTICKS', partNumber: 'Part Number: EHGR0020', price: '$0.00' },
         ],
       },
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'Subkit - Hydraulic, Link-Belt, Excavator, 170X4S, 190X4S', partNumber: 'Part Number: EGGJ0001', price: '$572.00' },
-          { name: 'PRG - Hose, Link-Belt, Excavator, 170X4S, 190X4S', partNumber: 'Part Number: EGGJ0002', price: '$968.00' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM ', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'Subkit - Hydraulic, Link-Belt, Excavator, 170X4S, 190X4S', partNumber: 'Part Number: EGGJ0001', price: '$686.40' },
+          { name: 'PRG - Hose, Link-Belt, Excavator, 170X4S, 190X4S', partNumber: 'Part Number: EGGJ0002', price: '$1161.60' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM ', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
     ],
@@ -53,31 +53,31 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic FRUs',
         items: [
-          { name: 'Cable-Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$175.00' },
-          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
-          { name: 'FRU - Electronic Controller, EC520-W and Wi-Fi, Core HEX w/Link-Belt UI', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
-          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$344.50' },
+          { name: 'Cable-Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$210.00' },
+          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
+          { name: 'FRU - Electronic Controller, EC520-W and Wi-Fi, Core HEX w/Link-Belt UI', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
+          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$413.40' },
         ],
       },
       {
         title: 'Platform Linkage',
         items: [
-          { name: 'Sub Kit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$833.95' },
-          { name: 'Sub Kit - Base Cab/Platform, Link-Belt, Excavator, X4S Trimble-Ready', partNumber: 'Part Number: EGGR0004', price: '$921.05' },
-          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1183.00' },
+          { name: 'Sub Kit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$1000.74' },
+          { name: 'Sub Kit - Base Cab/Platform, Link-Belt, Excavator, X4S Trimble-Ready', partNumber: 'Part Number: EGGR0004', price: '$1105.26' },
+          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1419.60' },
         ],
       },
       {
         title: 'Add-on Kits',
         items: [
-          { name: 'Kit - Add on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$583.05' },
+          { name: 'Kit - Add on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$699.66' },
         ],
       },
       {
         title: 'Misceallenous Spare Parts',
         items: [
-          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$345.80' },
-          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$91.00' },
+          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$414.96' },
+          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$109.20' },
         ],
       },
     ],
@@ -90,36 +90,36 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic FRUs',
         items: [
-          { name: 'Cable-Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$175.00' },
-          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
-          { name: 'FRU - Electronic Controller, EC520-W and Wi-Fi, Core HEX w/Link-Belt UI', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
-          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$344.50' },
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$175.00' },
+          { name: 'Cable-Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$210.00' },
+          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
+          { name: 'FRU - Electronic Controller, EC520-W and Wi-Fi, Core HEX w/Link-Belt UI', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
+          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$413.40' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$210.00' },
           { name: 'KIT - 2DMG/MC JOYSTICKS', partNumber: 'Part Number: EHGR0020', price: '$0.00' }
         ],
       },
       {
         title: 'Platform Linkage',
         items: [
-          { name: 'Sub Kit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$833.95' },
-          { name: 'Sub Kit - Base Cab/Platform, Link-Belt, Excavator, X4S Trimble-Ready', partNumber: 'Part Number: EGGR0004', price: '$921.05' },
-          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1183.00' },
+          { name: 'Sub Kit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$1000.74' },
+          { name: 'Sub Kit - Base Cab/Platform, Link-Belt, Excavator, X4S Trimble-Ready', partNumber: 'Part Number: EGGR0004', price: '$1105.26' },
+          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1419.60' },
         ],
       },
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'Subkit - Hydraulic, Link-Belt, Excavator, 170X4S, 190X4S', partNumber: 'Part Number: EGGJ0001', price: '$572.00' },
-          { name: 'PRG - Hose, Link-Belt, Excavator, 170X4S, 190X4S', partNumber: 'Part Number: EGGJ0002', price: '$968.00' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM ', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'Subkit - Hydraulic, Link-Belt, Excavator, 170X4S, 190X4S', partNumber: 'Part Number: EGGJ0001', price: '$686.40' },
+          { name: 'PRG - Hose, Link-Belt, Excavator, 170X4S, 190X4S', partNumber: 'Part Number: EGGJ0002', price: '$1161.60' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM ', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
       {
         title: 'Misceallenous Spare Parts',
         items: [
-          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$345.80' },
-          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$91.00' },
+          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$414.96' },
+          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$109.20' },
         ],
       },
     ],
@@ -131,36 +131,36 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic FRUs',
         items: [
-          { name: 'Cable-Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$175.00' },
-          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
-          { name: 'FRU - Electronic Controller, EC520-W and Wi-Fi, Core HEX w/Link-Belt UI', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
-          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$344.50' },
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$175.00' },
+          { name: 'Cable-Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$210.00' },
+          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
+          { name: 'FRU - Electronic Controller, EC520-W and Wi-Fi, Core HEX w/Link-Belt UI', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
+          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$413.40' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$210.00' },
           { name: 'KIT - 2DMG/MC JOYSTICKS', partNumber: 'Part Number: EHGR0020', price: '$0.00' }
         ],
       },
       {
         title: 'Platform Linkage',
         items: [
-          { name: 'Sub Kit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$833.95' },
-          { name: 'Sub Kit - Base Cab/Platform, Link-Belt, Excavator, X4S Trimble-Ready', partNumber: 'Part Number: EGGR0004', price: '$921.05' },
-          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1183.00' },
+          { name: 'Sub Kit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$1000.74' },
+          { name: 'Sub Kit - Base Cab/Platform, Link-Belt, Excavator, X4S Trimble-Ready', partNumber: 'Part Number: EGGR0004', price: '$1105.26' },
+          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1419.60' },
         ],
       },
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'Sub-kit, Sumitomo / Link Belt, HEX, 210-X4', partNumber: 'Part Number: EHEJ0003', price: '$478.00' },
-          { name: 'PKG-Hose, Sumitomo, Link Belt, Hex, 210 X4', partNumber: 'Part Number: EHEJ0001', price: '$653.25' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'Sub-kit, Sumitomo / Link Belt, HEX, 210-X4', partNumber: 'Part Number: EHEJ0003', price: '$573.60' },
+          { name: 'PKG-Hose, Sumitomo, Link Belt, Hex, 210 X4', partNumber: 'Part Number: EHEJ0001', price: '$783.90' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
       {
         title: 'Misceallenous Spare Parts',
         items: [
-          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$345.80' },
-          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$91.00' },
+          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$414.96' },
+          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$109.20' },
         ],
       },
     ],
@@ -173,28 +173,28 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic Kits',
         items: [
-          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
-          { name: 'Cable- Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$175.00' },
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
-          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
-          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$344.50' },
+          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
+          { name: 'Cable- Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$210.00' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
+          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
+          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$413.40' },
           { name: 'KIT - 2DMG/MC JOYSTICKS', partNumber: 'Part Number: EHGR0020', price: '$0.00' },
         ],
       },
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'Sub-kit, Sumitomo / Link Belt, HEX, 210-X4', partNumber: 'Part Number: EHEJ0003', price: '$478.00' },
-          { name: 'PKG-Hose, Sumitomo, Link Belt, Hex, 210 X4', partNumber: 'Part Number: EHEJ0001', price: '$653.25' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'Sub-kit, Sumitomo / Link Belt, HEX, 210-X4', partNumber: 'Part Number: EHEJ0003', price: '$573.60' },
+          { name: 'PKG-Hose, Sumitomo, Link Belt, Hex, 210 X4', partNumber: 'Part Number: EHEJ0001', price: '$783.90' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
       {
         title: 'Misceallenous Spare Parts',
         items: [
-          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$345.80' },
-          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$91.00' },
+          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$414.96' },
+          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$109.20' },
         ],
       },
     ],
@@ -207,17 +207,17 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic Kits',
         items: [
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'KIT - 2DMG/MC JOYSTICKS', partNumber: 'Part Number: EHGR0020', price: '$0.00' },
         ],
       },
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'Sub-kit, Sumitomo / Link Belt, HEX, 210-X4', partNumber: 'Part Number: EHEJ0003', price: '$478.00' },
-          { name: 'PKG-Hose, Sumitomo, Link Belt, Hex, 210 X4', partNumber: 'Part Number: EHEJ0001', price: '$653.25' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'Sub-kit, Sumitomo / Link Belt, HEX, 210-X4', partNumber: 'Part Number: EHEJ0003', price: '$573.60' },
+          { name: 'PKG-Hose, Sumitomo, Link Belt, Hex, 210 X4', partNumber: 'Part Number: EHEJ0001', price: '$783.90' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
     ],
@@ -230,11 +230,11 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic FRUs',
         items: [
-          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$175.00' },
-          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
-          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
-          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$344.50' },
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$210.00' },
+          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
+          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
+          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$413.40' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -242,26 +242,26 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Platform Linkage',
         items: [
-          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$833.95' },
-          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1188.85' },
-          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1183.00' },
+          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$1000.74' },
+          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1426.62' },
+          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1419.60' },
         ],
       },
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'SubKit - Hydraulic, Link-Belt, Excavator, 355X4S', partNumber: 'Part Number: EEDJ0002', price: '$572.00' },
-          { name: 'PKG - Hose, Link Belt, Excavator, 355X4S', partNumber: 'Part Number: EEDJ0003', price: '$968.00' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM ', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'SubKit - Hydraulic, Link-Belt, Excavator, 355X4S', partNumber: 'Part Number: EEDJ0002', price: '$686.40' },
+          { name: 'PKG - Hose, Link Belt, Excavator, 355X4S', partNumber: 'Part Number: EEDJ0003', price: '$1161.60' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM ', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
       {
         title: 'Misceallenous Spare Parts',
         items: [
-          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$345.80' },
-          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$32.70' },
-          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$91.00' },
+          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$414.96' },
+          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$39.24' },
+          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$109.20' },
         ],
       },
     ],
@@ -274,7 +274,7 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic Kits',
         items: [
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -282,10 +282,10 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'SubKit - Hydraulic, Link-Belt, Excavator, 355X4S', partNumber: 'Part Number: EEDJ0002', price: '$572.00' },
-          { name: 'PKG - Hose, Link Belt, Excavator, 355X4S', partNumber: 'Part Number: EEDJ0003', price: '$968.00' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM ', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'SubKit - Hydraulic, Link-Belt, Excavator, 355X4S', partNumber: 'Part Number: EEDJ0002', price: '$686.40' },
+          { name: 'PKG - Hose, Link Belt, Excavator, 355X4S', partNumber: 'Part Number: EEDJ0003', price: '$1161.60' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM ', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
     ],
@@ -299,14 +299,14 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'MG Kit for Advanced 220 and 370 X4S',
         items: [
-          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
-          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$344.50' },
-          { name: 'Cable- Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$175.00' },
-          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
-          { name: 'SubKit - Base Cab/Platform, Link-Belt, Excavator, X4S Trimble-Ready, V3.0', partNumber: 'Part Number: EGGR0004', price: '$921.05' },
-          { name: 'SubKit - Bucket Sensor Add-On, Excavator, V3.0', partNumber: 'Part Number: EHGR0015', price: '$287.95' },
-          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$345.80' },
-          { name: 'Mount - RAM Ratchet Clamp + Ball, w/ Hardware', partNumber: 'Part Number: EGER0006', price: '$91.00' },
+          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
+          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$413.40' },
+          { name: 'Cable- Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$210.00' },
+          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
+          { name: 'SubKit - Base Cab/Platform, Link-Belt, Excavator, X4S Trimble-Ready, V3.0', partNumber: 'Part Number: EGGR0004', price: '$1105.26' },
+          { name: 'SubKit - Bucket Sensor Add-On, Excavator, V3.0', partNumber: 'Part Number: EHGR0015', price: '$345.54' },
+          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$414.96' },
+          { name: 'Mount - RAM Ratchet Clamp + Ball, w/ Hardware', partNumber: 'Part Number: EGER0006', price: '$109.20' },
           
         ],
       },
@@ -320,26 +320,26 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic FRUs',
         items: [
-          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$175.00' },
-          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
-          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
-          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$344.50' },
+          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$210.00' },
+          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
+          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
+          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$413.40' },
         ],
       },
       {
         title: 'Platform Linkage',
         items: [
-          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$833.95' },
-          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1188.85' },
-          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1183.00' },
+          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$1000.74' },
+          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1426.62' },
+          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1419.60' },
         ],
       },
       {
         title: 'Misceallenous Spare Parts',
         items: [
-          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$345.80' },
-          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$32.70' },
-          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$91.00' },
+          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$414.96' },
+          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$39.24' },
+          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$109.20' },
         ],
       },
     ],
@@ -352,11 +352,11 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic FRUs',
         items: [
-          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$175.00' },
-          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
-          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
-          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$344.50' },
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$210.00' },
+          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
+          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
+          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$413.40' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -364,26 +364,26 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Platform Linkage',
         items: [
-          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$833.95' },
-          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1188.85' },
-          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1183.00' },
+          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$1000.74' },
+          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1426.62' },
+          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1419.60' },
         ],
       },
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'SubKit - Hydraulic, Link Belt, 145-X4 with pattern changer', partNumber: 'Part Number: EBCJ0002', price: '$464.44' },
-          { name: 'PKG-Hose, Link Belt, Hex, 145-X4', partNumber: 'Part Number: EBCJ0003', price: '$452.02' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'SubKit - Hydraulic, Link Belt, 145-X4 with pattern changer', partNumber: 'Part Number: EBCJ0002', price: '$557.33' },
+          { name: 'PKG-Hose, Link Belt, Hex, 145-X4', partNumber: 'Part Number: EBCJ0003', price: '$542.42' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
       {
         title: 'Misceallenous Spare Parts',
         items: [
-          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$345.80' },
-          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$32.70' },
-          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$91.00' },
+          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$414.96' },
+          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$39.24' },
+          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$109.20' },
         ],
       },
     ],
@@ -396,7 +396,7 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic Kits',
         items: [
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -404,10 +404,10 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'SubKit - Hydraulic, Link Belt, 145-X4 with pattern changer', partNumber: 'Part Number: EBCJ0002', price: '$464.44' },
-          { name: 'PKG-Hose, Link Belt, Hex, 145-X4', partNumber: 'Part Number: EBCJ0003', price: '$452.02' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'SubKit - Hydraulic, Link Belt, 145-X4 with pattern changer', partNumber: 'Part Number: EBCJ0002', price: '$557.33' },
+          { name: 'PKG-Hose, Link Belt, Hex, 145-X4', partNumber: 'Part Number: EBCJ0003', price: '$542.42' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
     ],
@@ -420,11 +420,11 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic FRUs',
         items: [
-          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$175.00' },
-          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
-          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
-          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$344.50' },
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$210.00' },
+          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
+          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
+          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$413.40' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -432,26 +432,26 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Platform Linkage',
         items: [
-          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$833.95' },
-          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1188.85' },
-          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1183.00' },
+          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$1000.74' },
+          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1426.62' },
+          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1419.60' },
         ],
       },
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'SubKit - Hydraulic, Link-Belt 160X4 and 350X4', partNumber: 'Part Number: EKEJ0015', price: '$478.00' },
-          { name: 'PKG-Hose, Link Belt, Hex, 160 X4', partNumber: 'Part Number: EGEJ0001', price: '$683.00' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'SubKit - Hydraulic, Link-Belt 160X4 and 350X4', partNumber: 'Part Number: EKEJ0015', price: '$573.60' },
+          { name: 'PKG-Hose, Link Belt, Hex, 160 X4', partNumber: 'Part Number: EGEJ0001', price: '$819.60' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
       {
         title: 'Misceallenous Spare Parts',
         items: [
-          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$345.80' },
-          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$32.70' },
-          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$91.00' },
+          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$414.96' },
+          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$39.24' },
+          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$109.20' },
         ],
       },
     ],
@@ -464,7 +464,7 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic Kits',
         items: [
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -472,10 +472,10 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'SubKit - Hydraulic, Link-Belt 160X4 and 350X4', partNumber: 'Part Number: EKEJ0015', price: '$478.00' },
-          { name: 'PKG-Hose, Link Belt, Hex, 160 X4', partNumber: 'Part Number: EGEJ0001', price: '$683.00' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'SubKit - Hydraulic, Link-Belt 160X4 and 350X4', partNumber: 'Part Number: EKEJ0015', price: '$573.60' },
+          { name: 'PKG-Hose, Link Belt, Hex, 160 X4', partNumber: 'Part Number: EGEJ0001', price: '$819.60' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
     ],
@@ -488,11 +488,11 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic FRUs',
         items: [
-          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$175.00' },
-          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
-          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
-          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$344.50' },
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$210.00' },
+          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
+          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
+          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$413.40' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -500,26 +500,26 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Platform Linkage',
         items: [
-          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$833.95' },
-          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1188.85' },
-          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1183.00' },
+          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$1000.74' },
+          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1426.62' },
+          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1419.60' },
         ],
       },
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'SubKit - Hydraulic, Link Belt, 245-X4', partNumber: 'Part Number: ECCJ0002', price: '$478.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'SubKit - Hydraulic, Link Belt, 245-X4', partNumber: 'Part Number: ECCJ0002', price: '$573.60' },
           { name: '	PKG-Hose, Link Belt, Hex, 245-X4', partNumber: 'Part Number: ECCJ0001', price: '$$683.00' },
-          { name: 'Valve Assembly, Pilot, HRV, Generic, 2009', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Valve Assembly, Pilot, HRV, Generic, 2009', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
       {
         title: 'Misceallenous Spare Parts',
         items: [
-          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$345.80' },
-          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$32.70' },
-          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$91.00' },
+          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$414.96' },
+          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$39.24' },
+          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$109.20' },
         ],
       },
     ],
@@ -532,7 +532,7 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic Kits',
         items: [
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -540,10 +540,10 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'SubKit - Hydraulic, Link Belt, 245-X4', partNumber: 'Part Number: ECCJ0002', price: '$478.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'SubKit - Hydraulic, Link Belt, 245-X4', partNumber: 'Part Number: ECCJ0002', price: '$573.60' },
           { name: '	PKG-Hose, Link Belt, Hex, 245-X4', partNumber: 'Part Number: ECCJ0001', price: '$$683.00' },
-          { name: 'Valve Assembly, Pilot, HRV, Generic, 2009', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Valve Assembly, Pilot, HRV, Generic, 2009', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
     ],
@@ -556,11 +556,11 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic FRUs',
         items: [
-          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$175.00' },
-          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
-          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
-          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$344.50' },
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$210.00' },
+          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
+          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
+          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$413.40' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -568,26 +568,26 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Platform Linkage',
         items: [
-          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$833.95' },
-          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1188.85' },
-          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1183.00' },
+          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$1000.74' },
+          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1426.62' },
+          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1419.60' },
         ],
       },
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'Sub-kit, Link Belt, HEX, 210-X4', partNumber: 'Part Number: EHEJ0003', price: '$478.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'Sub-kit, Link Belt, HEX, 210-X4', partNumber: 'Part Number: EHEJ0003', price: '$573.60' },
           { name: 'PKG-Hose, Link Belt, Hex, 210 X4', partNumber: 'Part Number: EHEJ0001', price: '$$653.25' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
       {
         title: 'Misceallenous Spare Parts',
         items: [
-          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$345.80' },
-          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$32.70' },
-          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$91.00' },
+          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$414.96' },
+          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$39.24' },
+          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$109.20' },
         ],
       },
     ],
@@ -600,7 +600,7 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic Kits',
         items: [
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -608,10 +608,10 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'Sub-kit, Link Belt, HEX, 210-X4', partNumber: 'Part Number: EHEJ0003', price: '$478.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'Sub-kit, Link Belt, HEX, 210-X4', partNumber: 'Part Number: EHEJ0003', price: '$573.60' },
           { name: 'PKG-Hose, Link Belt, Hex, 210 X4', partNumber: 'Part Number: EHEJ0001', price: '$$653.25' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
     ],
@@ -624,11 +624,11 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic FRUs',
         items: [
-          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$175.00' },
-          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
-          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
-          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$344.50' },
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$210.00' },
+          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
+          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
+          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$413.40' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -636,26 +636,26 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Platform Linkage',
         items: [
-          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$833.95' },
-          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1188.85' },
-          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1183.00' },
+          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$1000.74' },
+          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1426.62' },
+          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1419.60' },
         ],
       },
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'SubKit - Hydraulic, Link-Belt 160X4 and 350X4', partNumber: 'Part Number: EKEJ0015', price: '$478.00' },
-          { name: 'PKG - Hose, Link Belt, Excavator, 350-X4', partNumber: 'Part Number: EKEJ0014', price: '$683.00' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'SubKit - Hydraulic, Link-Belt 160X4 and 350X4', partNumber: 'Part Number: EKEJ0015', price: '$573.60' },
+          { name: 'PKG - Hose, Link Belt, Excavator, 350-X4', partNumber: 'Part Number: EKEJ0014', price: '$819.60' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
       {
         title: 'Misceallenous Spare Parts',
         items: [
-          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$345.80' },
-          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$32.70' },
-          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$91.00' },
+          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$414.96' },
+          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$39.24' },
+          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$109.20' },
         ],
       },
     ],
@@ -668,7 +668,7 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic Kits',
         items: [
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -676,10 +676,10 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'SubKit - Hydraulic, Link-Belt 160X4 and 350X4', partNumber: 'Part Number: EKEJ0015', price: '$478.00' },
-          { name: 'PKG - Hose, Link Belt, Excavator, 350-X4', partNumber: 'Part Number: EKEJ0014', price: '$683.00' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'SubKit - Hydraulic, Link-Belt 160X4 and 350X4', partNumber: 'Part Number: EKEJ0015', price: '$573.60' },
+          { name: 'PKG - Hose, Link Belt, Excavator, 350-X4', partNumber: 'Part Number: EKEJ0014', price: '$819.60' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
     ],
@@ -692,11 +692,11 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic FRUs',
         items: [
-          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$175.00' },
-          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
-          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
-          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$344.50' },
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'Cable - Adapter, Display, EW V3.0', partNumber: 'Part Number: EGER0024', price: '$210.00' },
+          { name: 'FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
+          { name: 'FRU - Electronic Controller, EC520-W w/IMU and Wi-Fi, Core HEX w/UI, Link-Belt', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
+          { name: 'FRU - Sensor Module, GS520', partNumber: 'Part Number: KHR52040', price: '$413.40' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -704,26 +704,26 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Platform Linkage',
         items: [
-          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$833.95' },
-          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1188.85' },
-          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1183.00' },
+          { name: 'SubKit - Base Arm Covered, Generic, Excavator, V3.0', partNumber: 'Part Number: EGER0004', price: '$1000.74' },
+          { name: 'SubKit - Base Cab/Platform, Generic, Excavator, V3.0, w/o Radio/Mast Mounting', partNumber: 'Part Number: EGER0025', price: '$1426.62' },
+          { name: 'Sub Kit - Base Arm, Soft Splitter, Generic, Excavator, V3.0', partNumber: 'Part Number: 160015-537', price: '$1419.60' },
         ],
       },
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'SubKit - Hydraulic, Link Belt, 80-X3 with pattern changer', partNumber: 'Part Number: EDBJ0001', price: '$915.85' },
-          { name: 'PKG-Hose, Link Belt, Hex, 80-X3', partNumber: 'Part Number: EDBJ0002', price: '$535.60' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM ', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'SubKit - Hydraulic, Link Belt, 80-X3 with pattern changer', partNumber: 'Part Number: EDBJ0001', price: '$1099.02' },
+          { name: 'PKG-Hose, Link Belt, Hex, 80-X3', partNumber: 'Part Number: EDBJ0002', price: '$642.72' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM ', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
       {
         title: 'Misceallenous Spare Parts',
         items: [
-          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$345.80' },
-          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$32.70' },
-          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$91.00' },
+          { name: 'Bracket - Display, Magnetic Mount', partNumber: 'Part Number: EGER0005', price: '$414.96' },
+          { name: 'Cable - Extension, Gel, 1M, 4 Pin Recp,4 Soc Plug', partNumber: 'Part Number: EGGR0006', price: '$39.24' },
+          { name: 'Mount - RAM Ratchet Clamp + Ball, w/Hardware', partNumber: 'Part Number: EGER0006', price: '$109.20' },
         ],
       },
     ],
@@ -736,7 +736,7 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic Kits',
         items: [
-          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$458.25' },
+          { name: 'FRU - Valve Module, VM510 w/Fasteners', partNumber: 'Part Number: EGER0008', price: '$549.90' },
           { name: 'Kit - Add-on, Remote Convenience Switch', partNumber: 'Part Number: ECCR0008', price: '$0.00' },
           { name: 'Kit - Add On, Switch Harness w/ CI520', partNumber: 'Part Number: EGER0027', price: '$0.00' },
         ],
@@ -744,10 +744,10 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Hydraulic Kits',
         items: [
-          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$631.15' },
-          { name: 'SubKit - Hydraulic, Link Belt, 80-X3 with pattern changer', partNumber: 'Part Number: EDBJ0001', price: '$915.85' },
-          { name: 'PKG-Hose, Link Belt, Hex, 80-X3', partNumber: 'Part Number: EDBJ0002', price: '$535.60' },
-          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM ', partNumber: 'Part Number: EGGJ0003', price: '$1235.00' },
+          { name: 'Kit - Add-on Auto, Generic, Excavator, Short Valve Cable, V3.0', partNumber: 'Part Number: EGER0010', price: '$757.38' },
+          { name: 'SubKit - Hydraulic, Link Belt, 80-X3 with pattern changer', partNumber: 'Part Number: EDBJ0001', price: '$1099.02' },
+          { name: 'PKG-Hose, Link Belt, Hex, 80-X3', partNumber: 'Part Number: EDBJ0002', price: '$642.72' },
+          { name: 'Valve Assembly, Pilot, HEX, Generic, OEM ', partNumber: 'Part Number: EGGJ0003', price: '$1482.00' },
         ],
       },
     ],
@@ -760,13 +760,13 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic FRUs',
         items: [
-          { name: 'FRU - Laser Catcher, LC510', partNumber: 'Part Number: EGGR0022', price: '$540.80' },
+          { name: 'FRU - Laser Catcher, LC510', partNumber: 'Part Number: EGGR0022', price: '$648.96' },
         ],
       },
       {
         title: 'Add-On Kits',
         items: [
-          { name: 'Kit - Add-On Laser Catcher, Generic, Excavator, V3.0', partNumber: 'Part Number: EGGR0015', price: '$157.95' },
+          { name: 'Kit - Add-On Laser Catcher, Generic, Excavator, V3.0', partNumber: 'Part Number: EGGR0015', price: '$189.54' },
         ],
       },
     ],
@@ -779,13 +779,13 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'Electronic FRUs',
         items: [
-          { name: 'FRU - Laser Catcher, LC510', partNumber: 'Part Number: EGGR0022', price: '$540.80' },
+          { name: 'FRU - Laser Catcher, LC510', partNumber: 'Part Number: EGGR0022', price: '$648.96' },
         ],
       },
       {
         title: 'Add-On Kits',
         items: [
-          { name: 'Cable - Adaptor, 4 Pin Recp - 6 Soc Recp ', partNumber: 'Part Number: EGGR0009', price: '$37.05' },
+          { name: 'Cable - Adaptor, 4 Pin Recp - 6 Soc Recp ', partNumber: 'Part Number: EGGR0009', price: '$44.46' },
         ],
       },
     ],
@@ -798,7 +798,7 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'EC520',
         items: [
-          { name: 'FRU - Electronic Controller, EC520-W and Wi-Fi, Core HEX w/Link-Belt UI', partNumber: 'Part Number: EGGR0001', price: '$2885.35' },
+          { name: 'FRU - Electronic Controller, EC520-W and Wi-Fi, Core HEX w/Link-Belt UI', partNumber: 'Part Number: EGGR0001', price: '$3462.42' },
         ],
       },
     ],
@@ -811,7 +811,7 @@ const STORE_DATA: Record<string, StoreProductData> = {
       {
         title: 'TD540',
         items: [
-          { name: '	FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2495.00' },
+          { name: '	FRU - 10" Touch Display, TD540-W w/Wi-Fi', partNumber: 'Part Number: KHR75680', price: '$2994.00' },
         ],
       },
     ],
