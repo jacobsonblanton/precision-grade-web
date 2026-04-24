@@ -1,0 +1,205 @@
+[
+  {
+    "id": 1,
+    "username": "trainer",
+    "email": "trainer@lbx.com",
+    "passwordHash": "$2a$10$3KQFY3MG47iorz1jHlRbJuKhKqHHYBaHOQj5CxEyDiazL/rVk58Y.",
+    "role": "trainer",
+    "displayName": "Alex Morgan — Trainer"
+  },
+  {
+    "id": 2,
+    "username": "sales_se",
+    "email": "sales_se@lbx.com",
+    "passwordHash": "$2a$10$UaU0WPj9BE/icMR2kkWnG.gZwSLNNcnYBn4GYpgRuN64kM7bvc3rO",
+    "role": "salesperson",
+    "displayName": "John Smith",
+    "territory": "Southeast"
+  },
+  {
+    "id": 3,
+    "username": "sales_mw",
+    "email": "sales_mw@lbx.com",
+    "passwordHash": "$2a$10$tBY4W8Z9gdzmhPHwtN/QL..Ct.Hkp3AVz1Ddbf.PaqDhlwkvjR2dy",
+    "role": "salesperson",
+    "displayName": "Sarah Miller",
+    "territory": "Midwest"
+  },
+  {
+    "id": 4,
+    "username": "sales_mtn",
+    "email": "sales_mtn@lbx.com",
+    "passwordHash": "$2a$10$4ACNX70pEF0mo67r1VrdduescwiXzZOcxeTQUjKaGGOhihH5mcVjC",
+    "role": "salesperson",
+    "displayName": "Chris Evans",
+    "territory": "Mountain West"
+  },
+  {
+    "id": 5,
+    "username": "mkickhofel",
+    "email": "mkickhofel@lbxco.com",
+    "passwordHash": "$2a$10$9MuLL6qwjxptpRjcYCtoTOO1OXpdVfbMg3TOlphNo4Q/UTQ6TOS.q",
+    "role": "salesperson",
+    "displayName": "Michael Kickhofel",
+    "territory": "UNASSIGNED"
+  },
+  {
+    "id": 6,
+    "username": "rphillips",
+    "email": "rphillips@lbxco.com",
+    "passwordHash": "$2a$10$js6Nq.eNByhVWhLKPJIFuudmb81cXT0enHU9rQtDMLEVlqcNaSXUC",
+    "role": "salesperson",
+    "displayName": "Randy Phillips",
+    "territory": "UNASSIGNED"
+  },
+  {
+    "id": 7,
+    "username": "acraft",
+    "email": "acraft@lbxco.com",
+    "passwordHash": "$2a$10$h6wsvfXJfUA4N0/5tddgWOGxbEKhPw4loxZHLB9lzzSWt1QuvR/za",
+    "role": "salesperson",
+    "displayName": "Adam Craft",
+    "territory": "UNASSIGNED"
+  },
+  {
+    "id": 8,
+    "username": "lboyer",
+    "email": "lboyer@lbxco.com",
+    "passwordHash": "$2a$10$6T0fCukMTtM6cQZ0uqChHuJrhaMW1V9bmfxDJX/9bc.GG8YH/IWIu",
+    "role": "salesperson",
+    "displayName": "Landon Boyer",
+    "territory": "UNASSIGNED"
+  },
+  {
+    "id": 9,
+    "username": "dseater",
+    "email": "dseater@lbxco.com",
+    "passwordHash": "$2a$10$nsAMLExi0fbkQylH.p7GueINJaDhoyjmBIoCHKl7TKN27LXUmAU8u",
+    "role": "salesperson",
+    "displayName": "Dave Seater",
+    "territory": "UNASSIGNED"
+  },
+  {
+    "id": 10,
+    "username": "ckline",
+    "email": "ckline@lbxco.com",
+    "passwordHash": "$2a$10$uE.hOahKnFTbgcfKt4lDNuNjwUI95jJDyQN6abNTGDRCLVCj8ibfq",
+    "role": "salesperson",
+    "displayName": "Chad Kline",
+    "territory": "UNASSIGNED"
+  },
+  {
+    "id": 11,
+    "username": "demartin",
+    "email": "demartin@lbxco.com",
+    "passwordHash": "$2a$10$7AQOgDfgw/ld0sEBGTIgIu9KeG7JvnynotK4zXhNKlNBhak7zJ0Hq",
+    "role": "salesperson",
+    "displayName": "Denis Martin",
+    "territory": "UNASSIGNED"
+  },
+  {
+    "id": 12,
+    "username": "zshimon",
+    "email": "zshimon@lbxco.com",
+    "passwordHash": "$2a$10$sKECM9B9O8SVD2PNYUfE9u3Ca0ng7KKnakhoswT4RtKW.Gn9yWtWW",
+    "role": "salesperson",
+    "displayName": "Zak Shimon",
+    "territory": "UNASSIGNED"
+  },
+  {
+    "id": 13,
+    "username": "lfullbright",
+    "email": "lfullbright@lbxco.com",
+    "passwordHash": "$2a$10$o/bR2N9GlxyS.EsDP29omedytx.y05U0I6xHVAGT6BS/0kJ1a0igK",
+    "role": "trainer",
+    "displayName": "Lee Fullbright"
+  },
+  {
+    "id": 14,
+    "username": "czimmerman",
+    "email": "czimmerman@lbxco.com",
+    "passwordHash": "$2a$10$6Io0za68i2lm0fPxjYvon.NQOMX30QSRGZbFyHv/gKApzFxO90L/S",
+    "role": "trainer",
+    "displayName": "Craig Zimmerman"
+  },
+  {
+    "id": 15,
+    "username": "jsullivan",
+    "email": "jsullivan@lbxco.com",
+    "passwordHash": "$2a$10$dJkZm1GWm7.37gqVkBMdfeLdmjr2d04k.Nghp5nmfEcLShC1mGuhi",
+    "role": "trainer",
+    "displayName": "Jason Sullivan"
+  },
+  {
+    "id": 16,
+    "username": "rarchibald",
+    "email": "rarchibald@lbxco.com",
+    "passwordHash": "$2a$10$N3hRvt8TUYeBaSW62a54lOlAGT73LrE2Tu/CxAPKcLR3JWTWysxj.",
+    "role": "trainer",
+    "displayName": "Rick Archibald"
+  },
+  {
+    "id": 17,
+    "username": "jconn",
+    "email": "jconn@lbxco.com",
+    "passwordHash": "$2a$10$EHlruvDLZOoUqY8F2.65be6eSI.Nxxp.OsuiKSyOEiafnNpcqtvVC",
+    "role": "trainer",
+    "displayName": "Justin Conn"
+  },
+  {
+    "id": 18,
+    "username": "jpalacio",
+    "email": "jpalacio@lbxco.com",
+    "passwordHash": "$2a$10$93qRrTrTuo8GaSy4FfMM9edrB1KHLGVNhfD5QnIjuwPpwUHSZq4V.",
+    "role": "trainer",
+    "displayName": "Jorge Palacio"
+  },
+  {
+    "id": 19,
+    "username": "jcoles",
+    "email": "jcoles@lbxco.com",
+    "passwordHash": "$2a$10$M1CLB7QLm76IM8H3ysuRA.zbZZOEkWYz0dalxZ8mPO1zKkJtE8Cv.",
+    "role": "trainer",
+    "displayName": "John Coles"
+  },
+  {
+    "id": 20,
+    "username": "kvanover",
+    "email": "kvanover@lbxco.com",
+    "passwordHash": "$2a$10$..PJbv.ew/4vy5QLsQhoG.jYYLmeVoNkPLOQhi7Z41UiYrVZh4OIK",
+    "role": "trainer",
+    "displayName": "Kristopher Vanover"
+  },
+  {
+    "id": 21,
+    "username": "jpicard",
+    "email": "jpicard@lbxco.com",
+    "passwordHash": "$2a$10$K27lNvK9N4Ty6r3Wy4bEUuApEH41uAOrtQw4BRaI1.dOgEUqoZGM6",
+    "role": "trainer",
+    "displayName": "Jean-Francois Picard"
+  },
+  {
+    "id": 22,
+    "username": "jblanton",
+    "email": "jblanton@lbxco.com",
+    "passwordHash": "$2a$10$.ACTZXinVChVouOuF5cwueh9Q7cd/jTsSCJ6Povi7m0dNTY.j.3xa",
+    "role": "admin",
+    "displayName": "Jacob Blanton"
+  },
+  {
+    "id": 23,
+    "username": "rscott",
+    "email": "rscott@lbxco.com",
+    "passwordHash": "$2a$10$1GjU8JayQSoA0.EkUZWlRuoXerS2yRISwdeRcUxd49TDxYbyRl5fi",
+    "role": "admin",
+    "displayName": "Randall Scott"
+  },
+  {
+    "id": 24,
+    "username": "jpiekema",
+    "email": "jpiekema@lbxco.com",
+    "passwordHash": "$2a$10$zT6HRzuW1RXMQ10Mb3Bs1.6YcKp8nio8GrNnOvRdEjMuBIge04oeK",
+    "role": "admin",
+    "displayName": "Jason Piekema"
+  }
+]

@@ -1,0 +1,17 @@
+export const dealerKits = [
+  { dealerOrgNo: '400072P', dealerName: 'Mid South Machinery, Inc.', twoD_guidance: 0, twoD_control: 3, threeD_control: 0, total_kits: 3 },
+  { dealerOrgNo: '400077P', dealerName: "Wood's CRW Corporation", twoD_guidance: 1, twoD_control: 0, threeD_control: 0, total_kits: 1 },
+  { dealerOrgNo: '400085P', dealerName: 'Heavy Machines, Inc.', twoD_guidance: 0, twoD_control: 1, threeD_control: 0, total_kits: 1 },
+  { dealerOrgNo: '400087P', dealerName: 'Heavy Machines, Inc.', twoD_guidance: 3, twoD_control: 3, threeD_control: 0, total_kits: 6 },
+  { dealerOrgNo: '400121P', dealerName: 'Mid Country Machinery LLC', twoD_guidance: 0, twoD_control: 1, threeD_control: 0, total_kits: 1 },
+  { dealerOrgNo: '400126P', dealerName: 'Hawkins-Graves, Inc.', twoD_guidance: 0, twoD_control: 3, threeD_control: 0, total_kits: 3 },
+  { dealerOrgNo: '507100P', dealerName: 'Contractors Sales Company, Inc', twoD_guidance: 0, twoD_control: 2, threeD_control: 0, total_kits: 2 },
+  { dealerOrgNo: '512000P', dealerName: 'Rasmussen Equipment Co.', twoD_guidance: 0, twoD_control: 1, threeD_control: 0, total_kits: 1 },
+  { dealerOrgNo: '512400P', dealerName: 'Rexco Equipment, Inc.', twoD_guidance: 2, twoD_control: 2, threeD_control: 0, total_kits: 4 },
+  { dealerOrgNo: '512401P', dealerName: 'Rexco Equipment, Inc.', twoD_guidance: 4, twoD_control: 1, threeD_control: 0, total_kits: 5 },
+  { dealerOrgNo: '513100P', dealerName: 'Riverbend Machinery, Inc.', twoD_guidance: 0, twoD_control: 1, threeD_control: 0, total_kits: 1 },
+  { dealerOrgNo: '514300P', dealerName: 'Triad Machinery, Inc.', twoD_guidance: 3, twoD_control: 3, threeD_control: 0, total_kits: 6 },
+  { dealerOrgNo: '514301P', dealerName: 'Triad Machinery, Inc.', twoD_guidance: 1, twoD_control: 0, threeD_control: 0, total_kits: 1 },
+  { dealerOrgNo: '514303P', dealerName: 'Triad Machinery, Inc.', twoD_guidance: 0, twoD_control: 1, threeD_control: 0, total_kits: 1 },
+  { dealerOrgNo: '514304P', dealerName: 'Triad Machinery, Inc.', twoD_guidance: 0, twoD_control: 1, threeD_control: 0, total_kits: 1 },
+];

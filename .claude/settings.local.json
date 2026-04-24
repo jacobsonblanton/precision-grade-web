@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npx next:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run:*)",
+      "Bash(netstat -ano)",
+      "Bash(node -e \":*)",
+      "Bash(powershell -File:*)",
+      "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Users\\\\jblanton\\\\Documents\\\\Precision Grade App\\\\public\\\\16 Step Excavator Commissioning'' | Select-Object -ExpandProperty Name | Sort-Object\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\jblanton\\\\Documents\\\\Precision Grade App\\\\extract_step2.ps1\")",
+      "Bash(powershell -ExecutionPolicy Bypass -Command \":*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\jblanton\\\\Documents\\\\Precision Grade App\\\\copy_step2.ps1\")",
+      "Bash(powershell -ExecutionPolicy Bypass -Command \"Get-ChildItem ''C:\\\\Users\\\\jblanton\\\\Documents\\\\Precision Grade App\\\\public\\\\16 Step Excavator Commissioning'' | Select-Object Name | Sort-Object Name\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\jblanton\\\\Documents\\\\Precision Grade App\\\\extract_all_steps.ps1\")"
+    ]
+  }
+}

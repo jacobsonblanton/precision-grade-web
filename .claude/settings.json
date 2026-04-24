@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ':*)",
+      "Bash(node -e \"require\\('mssql'\\)\")",
+      "Bash(node -e \"require\\('msnodesqlv8'\\)\")",
+      "Bash(powershell -Command 'Get-OdbcDriver | Where-Object { $_.Name -like '\\\\''*SQL Server*'\\\\'' } | Select-Object Name')",
+      "Bash(npm rebuild:*)",
+      "Bash(npm --version)",
+      "Bash(powershell -Command \"Remove-Item -Recurse -Force 'c:/Users/jblanton/Documents/Precision Grade App/.next'\")",
+      "Bash(node scripts/refresh-kit-sales.js)",
+      "Bash(powershell -Command ':*)"
+    ]
+  }
+}
