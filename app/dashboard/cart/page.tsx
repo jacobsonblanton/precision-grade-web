@@ -35,13 +35,13 @@ export default function CartPage() {
   return (
     <div className="min-h-full">
       {/* Header */}
-      <div className="sticky top-0 z-10 bg-neutral-950/95 backdrop-blur-sm border-b border-neutral-800 px-6 py-4">
+      <div className="sticky top-0 z-10 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-[#1f1f1f] px-6 py-4">
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <ShoppingCart size={18} className="text-red-500" />
             <div>
               <h1 className="text-lg font-black text-white">Cart</h1>
-              <p className="text-xs text-neutral-400">
+              <p className="text-xs text-neutral-500">
                 {totalItems === 0
                   ? 'No items selected'
                   : `${totalItems} item${totalItems !== 1 ? 's' : ''} from ${Object.keys(grouped).length} kit${Object.keys(grouped).length !== 1 ? 's' : ''}`}
@@ -52,14 +52,14 @@ export default function CartPage() {
             <div className="flex items-center gap-2">
               <button
                 onClick={() => downloadCartCsv(items)}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-neutral-400 hover:bg-neutral-800 hover:text-white border border-neutral-800 transition-all"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-neutral-400 hover:bg-[#161616] hover:text-white border border-[#2a2a2a] transition-all"
               >
                 <Download size={13} />
                 Download CSV
               </button>
               <button
                 onClick={clearCart}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-neutral-400 hover:bg-red-500/10 hover:text-red-400 border border-neutral-800 transition-all"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-neutral-400 hover:bg-red-500/10 hover:text-red-400 border border-[#2a2a2a] transition-all"
               >
                 <Trash2 size={13} />
                 Clear All
@@ -81,9 +81,9 @@ export default function CartPage() {
         )}
 
         {Object.entries(grouped).map(([productTitle, groupItems]) => (
-          <div key={productTitle} className="rounded-xl bg-neutral-900 border border-neutral-800 overflow-hidden">
+          <div key={productTitle} className="rounded-xl bg-[#111111] border border-[#1e1e1e] overflow-hidden">
             {/* Product header */}
-            <div className="px-5 py-3 border-b border-neutral-800 bg-neutral-900">
+            <div className="px-5 py-3 border-b border-[#1e1e1e] bg-[#111111]">
               <p className="text-sm font-bold text-white">{productTitle}</p>
               <p className="text-xs text-neutral-500 mt-0.5">
                 {groupItems.reduce((s, i) => s + i.quantity, 0)} item{groupItems.reduce((s, i) => s + i.quantity, 0) !== 1 ? 's' : ''}
@@ -91,7 +91,7 @@ export default function CartPage() {
             </div>
 
             {/* Items */}
-            <div className="divide-y divide-neutral-800/60">
+            <div className="divide-y divide-[#1e1e1e]">
               {groupItems.map((item) => (
                 <div key={item.id} className="flex items-center gap-3 px-5 py-3">
                   <div className="flex-1 min-w-0">
@@ -102,19 +102,19 @@ export default function CartPage() {
                   </div>
 
                   {/* Qty stepper */}
-                  <div className="flex items-center border border-neutral-700 rounded shrink-0">
+                  <div className="flex items-center border border-[#2a2a2a] rounded shrink-0">
                     <button
                       onClick={() => updateQty(item.id, item.quantity - 1)}
-                      className="px-2.5 py-1 text-neutral-400 hover:text-white hover:bg-neutral-800 text-sm transition-colors"
+                      className="px-2.5 py-1 text-neutral-400 hover:text-white hover:bg-[#161616] text-sm transition-colors"
                     >
                       −
                     </button>
-                    <span className="px-3 text-sm text-white border-x border-neutral-700 min-w-[32px] text-center">
+                    <span className="px-3 text-sm text-white border-x border-[#2a2a2a] min-w-[32px] text-center">
                       {item.quantity}
                     </span>
                     <button
                       onClick={() => updateQty(item.id, item.quantity + 1)}
-                      className="px-2.5 py-1 text-neutral-400 hover:text-white hover:bg-neutral-800 text-sm transition-colors"
+                      className="px-2.5 py-1 text-neutral-400 hover:text-white hover:bg-[#161616] text-sm transition-colors"
                     >
                       +
                     </button>
@@ -134,7 +134,7 @@ export default function CartPage() {
         ))}
 
         {items.length > 0 && (
-          <div className="rounded-xl bg-neutral-900/60 border border-neutral-800 px-5 py-4 flex items-center justify-between">
+          <div className="rounded-xl bg-[#111111] border border-[#1e1e1e] px-5 py-4 flex items-center justify-between">
             <div>
               <p className="text-xs text-neutral-500 uppercase tracking-wider">Total Items</p>
               <p className="text-2xl font-black text-white mt-0.5">{totalItems}</p>

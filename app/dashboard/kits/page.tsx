@@ -7,6 +7,67 @@ import { kitSales, KitSale } from '@/lib/kitSales';
 import { Layers, Search, ChevronUp, ChevronDown, ChevronRight, DollarSign, Package, Building2, CalendarDays, RefreshCw } from 'lucide-react';
 import clsx from 'clsx';
 
+// ── KPI card components ────────────────────────────────────────────────────
+
+function DonutCard({ label, value, fill }: { label: string; value: string; fill: number }) {
+  const r = 40, cx = 52, cy = 52, stroke = 7;
+  const circ = 2 * Math.PI * r;
+  const dash = circ * fill;
+  return (
+    <div className="rounded-xl bg-[#111111] border border-[#1e1e1e] p-4 flex flex-col gap-2">
+      <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-neutral-500">{label}</p>
+      <div className="flex items-center justify-center py-1">
+        <svg width={104} height={104} viewBox="0 0 104 104">
+          <circle cx={cx} cy={cy} r={r} fill="none" stroke="#1e1e1e" strokeWidth={stroke} />
+          <circle
+            cx={cx} cy={cy} r={r} fill="none"
+            stroke="#cc0000" strokeWidth={stroke}
+            strokeLinecap="round"
+            strokeDasharray={`${dash} ${circ}`}
+            strokeDashoffset={circ * 0.25}
+            transform={`rotate(-90 ${cx} ${cy})`}
+            style={{ filter: 'drop-shadow(0 0 6px rgba(204,0,0,0.5))' }}
+          />
+          <text x={cx} y={cy + 1} textAnchor="middle" dominantBaseline="middle"
+            fill="white" fontSize={value.length > 4 ? 13 : 18} fontWeight="700" fontFamily="ui-sans-serif,system-ui,sans-serif">
+            {value}
+          </text>
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function SparklineCard({ label, value, points }: { label: string; value: string; points: number[] }) {
+  const W = 160, H = 56;
+  const pts = points.length < 2 ? [0, 1] : points;
+  const min = Math.min(...pts), max = Math.max(...pts);
+  const range = max - min || 1;
+  const coords = pts.map((v, i) => {
+    const x = (i / (pts.length - 1)) * W;
+    const y = H - ((v - min) / range) * (H - 8) - 4;
+    return `${x},${y}`;
+  });
+  const polyline = coords.join(' ');
+  const areaClose = `${W},${H} 0,${H}`;
+  return (
+    <div className="rounded-xl bg-[#111111] border border-[#1e1e1e] p-4 flex flex-col gap-2">
+      <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-neutral-500">{label}</p>
+      <p className="text-2xl font-bold text-white">{value}</p>
+      <svg viewBox={`0 0 ${W} ${H}`} className="w-full" style={{ height: 56 }}>
+        <defs>
+          <linearGradient id="spark-fill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#cc0000" stopOpacity="0.3" />
+            <stop offset="100%" stopColor="#cc0000" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+        <polygon points={`${coords[0]} ${polyline} ${areaClose}`} fill="url(#spark-fill)" />
+        <polyline points={polyline} fill="none" stroke="#cc0000" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
+      </svg>
+    </div>
+  );
+}
+
 type SortKey = 'name' | 'units' | 'revenue' | 'lastSale';
 type SortDir = 'asc' | 'desc';
 type View = 'dealers' | 'transactions';
@@ -182,12 +243,18 @@ export default function KitsPage() {
 
   if (!user) return null;
 
-  const statCards = [
-    { label: 'Total Units Sold', value: totalUnits.toString(), icon: Package, color: 'text-red-400', bg: 'bg-red-600/10 border-red-500/20' },
-    { label: 'Total Revenue', value: fmt(totalRevenue), icon: DollarSign, color: 'text-green-400', bg: 'bg-green-600/10 border-green-500/20' },
-    { label: 'Active Dealers', value: dealers.length.toString(), icon: Building2, color: 'text-blue-400', bg: 'bg-blue-600/10 border-blue-500/20' },
-    { label: 'Most Recent Sale', value: latestSale, icon: CalendarDays, color: 'text-orange-400', bg: 'bg-orange-600/10 border-orange-500/20' },
-  ];
+  // Build monthly revenue sparkline data from typedSales
+  const sparklineData = (() => {
+    const byMonth: Record<string, number> = {};
+    for (const s of typedSales) {
+      const d = parseDate(s.orderDate);
+      const key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
+      byMonth[key] = (byMonth[key] ?? 0) + s.net * s.qty;
+    }
+    return Object.keys(byMonth).sort().map(k => byMonth[k]);
+  })();
+
+  const recentYear = latestSale ? parseDate(latestSale).getFullYear().toString() : '—';
 
   const colHeaders: { key: SortKey; label: string }[] = [
     { key: 'name', label: 'Dealer' },
@@ -197,7 +264,7 @@ export default function KitsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-950 p-6 space-y-6">
+    <div className="min-h-screen bg-[#0a0a0a] p-6 space-y-6">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
@@ -206,7 +273,7 @@ export default function KitsPage() {
           </div>
           <div>
             <h1 className="text-xl font-bold text-white">Precision Grade Kits</h1>
-            <p className="text-sm text-neutral-400">All kits sold and deployed in the field since January 2018. </p>
+            <p className="text-sm text-neutral-500">All hits sold and depitived in the data since January 2016.</p>
           </div>
         </div>
 
@@ -260,17 +327,12 @@ export default function KitsPage() {
         </div>
       </div>
 
-      {/* Stat cards */}
+      {/* KPI cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        {statCards.map((s) => (
-          <div key={s.label} className={clsx('rounded-xl border p-4', s.bg)}>
-            <div className="flex items-center gap-2 mb-2">
-              <s.icon size={14} className={s.color} />
-              <p className="text-xs text-neutral-500 uppercase tracking-wider">{s.label}</p>
-            </div>
-            <p className={clsx('text-2xl font-bold', s.color)}>{s.value}</p>
-          </div>
-        ))}
+        <DonutCard label="TOTAL UNITS SOLD" value={totalUnits.toString()} fill={0.78} />
+        <SparklineCard label="TOTAL REVENUE" value={fmt(totalRevenue)} points={sparklineData} />
+        <DonutCard label="ACTIVE DEALERS" value={dealers.length.toString()} fill={0.65} />
+        <DonutCard label="MOST RECENT SALE" value={recentYear} fill={0.88} />
       </div>
 
       {/* By Dealer view */}

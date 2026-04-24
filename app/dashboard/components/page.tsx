@@ -296,9 +296,9 @@ function FirmwareCardTile({ card }: { card: FirmwareCard }) {
   const [expanded, setExpanded] = useState<number | null>(0);
 
   return (
-    <div className="rounded-xl bg-neutral-900 border border-neutral-800 overflow-hidden">
+    <div className="rounded-xl bg-[#111111] border border-[#1e1e1e] overflow-hidden">
       {/* Card header */}
-      <div className="px-4 py-3 border-b border-neutral-800 flex items-center gap-2">
+      <div className="px-4 py-3 border-b border-[#1e1e1e] flex items-center gap-2">
         {card.type === 'firmware' ? (
           <span className="flex items-center justify-center w-6 h-6 rounded-md bg-blue-600/20 border border-blue-500/30">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-blue-400"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M8 6V4m8 2V4M6 10h.01M10 10h.01M14 10h.01M18 10h.01M6 14h.01M10 14h.01M14 14h.01M18 14h.01"/></svg>
@@ -315,15 +315,15 @@ function FirmwareCardTile({ card }: { card: FirmwareCard }) {
       </div>
 
       {/* Releases */}
-      <div className="divide-y divide-neutral-800/60">
+      <div className="divide-y divide-[#1e1e1e]">
         {card.releases.map((release, i) => (
           <div key={i}>
             <button
               onClick={() => setExpanded(expanded === i ? null : i)}
-              className="w-full flex items-center justify-between px-4 py-2.5 hover:bg-neutral-800/40 transition-colors"
+              className="w-full flex items-center justify-between px-4 py-2.5 hover:bg-[#161616] transition-colors"
             >
               <div className="flex items-center gap-3">
-                <span className="text-xs font-mono font-semibold text-white bg-neutral-800 px-2 py-0.5 rounded">
+                <span className="text-xs font-mono font-semibold text-white bg-[#1e1e1e] px-2 py-0.5 rounded">
                   v{release.version}
                 </span>
                 <span className="text-xs text-neutral-500">{release.date}</span>
@@ -339,7 +339,7 @@ function FirmwareCardTile({ card }: { card: FirmwareCard }) {
               <div className="px-4 pb-3 space-y-2">
                 <ul className="space-y-1">
                   {release.notes.map((note, j) => (
-                    <li key={j} className="flex gap-2 text-xs text-slate-400">
+                    <li key={j} className="flex gap-2 text-xs text-neutral-400">
                       <span className="text-neutral-600 mt-0.5 flex-shrink-0">•</span>
                       <span>{note}</span>
                     </li>
@@ -378,8 +378,8 @@ function ModelCardTile({
   onStoreOpen: (label: string, storeKey: string) => void;
 }) {
   return (
-    <div className="rounded-xl bg-neutral-900 border border-neutral-800 overflow-hidden">
-      <div className="px-4 py-2.5 border-b border-neutral-800">
+    <div className="rounded-xl bg-[#111111] border border-[#1e1e1e] overflow-hidden">
+      <div className="px-4 py-2.5 border-b border-[#1e1e1e]">
         <p className="text-sm font-bold text-white">{card.model}</p>
       </div>
       <div className="px-4 py-3 flex flex-wrap gap-2">
@@ -395,7 +395,7 @@ function ModelCardTile({
           ) : (
             <span
               key={kit.label}
-              className="px-2.5 py-1 rounded-md text-xs font-medium bg-neutral-800/60 text-neutral-600 border border-neutral-700/40 cursor-default"
+              className="px-2.5 py-1 rounded-md text-xs font-medium bg-[#1a1a1a] text-neutral-600 border border-[#2a2a2a] cursor-default"
             >
               {kit.label}
             </span>
@@ -415,24 +415,24 @@ export default function ComponentsPage() {
   return (
     <div className="min-h-full">
       {/* Page header */}
-      <div className="sticky top-0 z-10 bg-neutral-950/95 backdrop-blur-sm border-b border-neutral-800 px-6 py-4">
+      <div className="sticky top-0 z-10 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-[#1f1f1f] px-6 py-4">
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <Package size={18} className="text-red-500" />
             <div>
               <h1 className="text-lg font-black text-white">Components</h1>
-              <p className="text-xs text-slate-400">Precision Grade parts &amp; system components</p>
+              <p className="text-xs text-neutral-500">Precision Grade parts &amp; system components</p>
             </div>
           </div>
           {/* Vendor toggle */}
-          <div className="flex items-center rounded-lg border border-neutral-700/60 overflow-hidden text-sm font-semibold">
+          <div className="flex items-center rounded-lg border border-[#2a2a2a] overflow-hidden text-sm font-semibold">
             <button
               onClick={() => setVendor('trimble')}
               className={clsx(
                 'px-4 py-2 transition-colors',
                 vendor === 'trimble'
                   ? 'bg-red-600 text-white'
-                  : 'bg-neutral-800 text-neutral-400 hover:text-neutral-200',
+                  : 'bg-[#161616] text-neutral-400 hover:text-neutral-200',
               )}
             >
               Trimble
@@ -440,10 +440,10 @@ export default function ComponentsPage() {
             <button
               onClick={() => setVendor('topcon')}
               className={clsx(
-                'px-4 py-2 transition-colors border-l border-neutral-700/60',
+                'px-4 py-2 transition-colors border-l border-[#2a2a2a]',
                 vendor === 'topcon'
                   ? 'bg-red-600 text-white'
-                  : 'bg-neutral-800 text-neutral-400 hover:text-neutral-200',
+                  : 'bg-[#161616] text-neutral-400 hover:text-neutral-200',
               )}
             >
               Topcon
@@ -456,8 +456,8 @@ export default function ComponentsPage() {
         {vendor === 'trimble' && (
           <>
             {/* Store header */}
-            <div className="rounded-xl bg-neutral-900/60 border border-neutral-800 px-6 py-5">
-              <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-0.5">
+            <div className="rounded-xl bg-[#111111] border border-[#1e1e1e] px-6 py-5">
+              <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 mb-0.5">
                 Trimble OEM Parts
               </p>
               <p className="text-base font-bold text-white">LBX</p>
@@ -466,10 +466,10 @@ export default function ComponentsPage() {
             {TRIMBLE_SECTIONS.map((section) => (
               <div key={section.title}>
                 <div className="flex items-center gap-3 mb-4">
-                  <h2 className="text-sm font-bold uppercase tracking-wider text-neutral-400">
+                  <h2 className="text-sm font-bold uppercase tracking-wider text-neutral-500">
                     {section.title}
                   </h2>
-                  <div className="flex-1 h-px bg-neutral-800" />
+                  <div className="flex-1 h-px bg-[#1f1f1f]" />
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
                   {section.cards.map((card) => (
@@ -498,10 +498,10 @@ export default function ComponentsPage() {
         {/* Firmware & Software — shown for both vendors */}
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <h2 className="text-sm font-bold uppercase tracking-wider text-neutral-400">
+            <h2 className="text-sm font-bold uppercase tracking-wider text-neutral-500">
               Firmware &amp; Software Updates
             </h2>
-            <div className="flex-1 h-px bg-neutral-800" />
+            <div className="flex-1 h-px bg-[#1f1f1f]" />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
             {(vendor === 'trimble' ? TRIMBLE_FIRMWARE : TOPCON_FIRMWARE).map((card) => (

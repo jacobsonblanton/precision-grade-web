@@ -143,7 +143,7 @@ const TIP_CONTENT: Record<Exclude<TipPage, 'main'>, { title: string; body: React
           ]}
         />
         <Section title="When to Choose 2D">
-          <ul className="list-disc list-inside space-y-1 text-sm text-slate-300">
+          <ul className="list-disc list-inside space-y-1 text-sm text-neutral-300">
             <li>Simple cross-slope or one-way grade work</li>
             <li>Road maintenance and re-grading</li>
             <li>Tight budget or shorter project timelines</li>
@@ -151,7 +151,7 @@ const TIP_CONTENT: Record<Exclude<TipPage, 'main'>, { title: string; body: React
           </ul>
         </Section>
         <Section title="When to Choose 3D">
-          <ul className="list-disc list-inside space-y-1 text-sm text-slate-300">
+          <ul className="list-disc list-inside space-y-1 text-sm text-neutral-300">
             <li>Complex surface models or design files exist</li>
             <li>High-accuracy earthworks or mass grading</li>
             <li>Multiple machines working the same surface</li>
@@ -169,19 +169,19 @@ const TIP_CONTENT: Record<Exclude<TipPage, 'main'>, { title: string; body: React
           <p>2D machine control excels in repeatable, slope-based tasks where a design model is not required.</p>
         </Section>
         <Section title="Road Maintenance">
-          <p className="text-sm text-slate-300">Use cross-slope sensors to maintain consistent crown or single-slope grades on gravel and paved roads. The ECS20 automatically adjusts blade pitch to hold set slope throughout the pass.</p>
+          <p className="text-sm text-neutral-300">Use cross-slope sensors to maintain consistent crown or single-slope grades on gravel and paved roads. The ECS20 automatically adjusts blade pitch to hold set slope throughout the pass.</p>
         </Section>
         <Section title="Drainage Channels">
-          <p className="text-sm text-slate-300">Set a longitudinal grade reference with a laser transmitter. The GS520 sensor rides the laser plane and provides real-time blade guidance to maintain consistent fall across long runs.</p>
+          <p className="text-sm text-neutral-300">Set a longitudinal grade reference with a laser transmitter. The GS520 sensor rides the laser plane and provides real-time blade guidance to maintain consistent fall across long runs.</p>
         </Section>
         <Section title="Parking Lots &amp; Pads">
-          <p className="text-sm text-slate-300">Two-way cross-slope control lets operators quickly establish uniform 2% drainage slope across large flat areas without frequent grade checks.</p>
+          <p className="text-sm text-neutral-300">Two-way cross-slope control lets operators quickly establish uniform 2% drainage slope across large flat areas without frequent grade checks.</p>
         </Section>
         <Section title="Subgrade Preparation">
-          <p className="text-sm text-slate-300">Work to a grade stake reference or laser reference plane for consistent sub-base depth before paving or aggregate placement.</p>
+          <p className="text-sm text-neutral-300">Work to a grade stake reference or laser reference plane for consistent sub-base depth before paving or aggregate placement.</p>
         </Section>
         <Section title="Key Tips">
-          <ul className="list-disc list-inside space-y-1 text-sm text-slate-300">
+          <ul className="list-disc list-inside space-y-1 text-sm text-neutral-300">
             <li>Verify ECS20 slope sensor zero calibration daily</li>
             <li>Check TDS20 display for sensor status before starting each pass</li>
             <li>Confirm GS520 receiver height matches machine setup file</li>
@@ -199,19 +199,19 @@ const TIP_CONTENT: Record<Exclude<TipPage, 'main'>, { title: string; body: React
           <p>3D machine control uses a design surface (DTM/SVD file) combined with real-time GPS positioning to guide the machine blade or bucket to exact design elevation anywhere on site.</p>
         </Section>
         <Section title="Mass Grading / Earthworks">
-          <p className="text-sm text-slate-300">The design file defines cut and fill volumes. The system shows the operator how much to cut or fill at each position, enabling highly efficient bulk earthmoving without manual staking.</p>
+          <p className="text-sm text-neutral-300">The design file defines cut and fill volumes. The system shows the operator how much to cut or fill at each position, enabling highly efficient bulk earthmoving without manual staking.</p>
         </Section>
         <Section title="Sub-base &amp; Subgrade">
-          <p className="text-sm text-slate-300">Load pavement design files to automatically hold exact subgrade elevation and cross-fall as defined by the road designer, reducing rework and material waste.</p>
+          <p className="text-sm text-neutral-300">Load pavement design files to automatically hold exact subgrade elevation and cross-fall as defined by the road designer, reducing rework and material waste.</p>
         </Section>
         <Section title="Complex Intersections &amp; Curves">
-          <p className="text-sm text-slate-300">3D models handle superelevation transitions, curve widening, and compound slopes that are impossible to achieve with 2D reference methods.</p>
+          <p className="text-sm text-neutral-300">3D models handle superelevation transitions, curve widening, and compound slopes that are impossible to achieve with 2D reference methods.</p>
         </Section>
         <Section title="As-Built Capture">
-          <p className="text-sm text-slate-300">The TDS20 records blade position continuously. Export as-built surfaces to verify that finished work meets design tolerances and to satisfy QA documentation requirements.</p>
+          <p className="text-sm text-neutral-300">The TDS20 records blade position continuously. Export as-built surfaces to verify that finished work meets design tolerances and to satisfy QA documentation requirements.</p>
         </Section>
         <Section title="Key Tips">
-          <ul className="list-disc list-inside space-y-1 text-sm text-slate-300">
+          <ul className="list-disc list-inside space-y-1 text-sm text-neutral-300">
             <li>Always check GNSS receiver status and PDOP before starting work</li>
             <li>Use RTN or a fixed base within 10 km for best accuracy</li>
             <li>Verify design file datum matches site survey datum</li>
@@ -249,28 +249,28 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   return (
     <div>
       <h3 className="text-xs font-semibold uppercase tracking-wider text-red-500 mb-2">{title}</h3>
-      <div className="text-sm text-slate-300 leading-relaxed">{children}</div>
+      <div className="text-sm text-neutral-300 leading-relaxed">{children}</div>
     </div>
   );
 }
 
 function CompareTable({ rows }: { rows: [string, string, string][] }) {
   return (
-    <div className="overflow-x-auto rounded-xl border border-neutral-800">
+    <div className="overflow-x-auto rounded-xl border border-[#1e1e1e]">
       <table className="w-full text-xs">
         <thead>
-          <tr className="bg-neutral-900/80 border-b border-slate-700/50">
-            <th className="text-left px-4 py-2.5 text-slate-400 font-semibold">Attribute</th>
+          <tr className="bg-[#111111] border-b border-[#2a2a2a]">
+            <th className="text-left px-4 py-2.5 text-neutral-400 font-semibold">Attribute</th>
             <th className="text-left px-4 py-2.5 text-blue-400 font-semibold">2D</th>
             <th className="text-left px-4 py-2.5 text-violet-400 font-semibold">3D</th>
           </tr>
         </thead>
         <tbody>
           {rows.map(([attr, two, three], i) => (
-            <tr key={i} className="border-b border-slate-700/30 last:border-0">
-              <td className="px-4 py-2.5 text-slate-400">{attr}</td>
-              <td className="px-4 py-2.5 text-slate-300">{two}</td>
-              <td className="px-4 py-2.5 text-slate-300">{three}</td>
+            <tr key={i} className="border-b border-[#1e1e1e] last:border-0">
+              <td className="px-4 py-2.5 text-neutral-400">{attr}</td>
+              <td className="px-4 py-2.5 text-neutral-300">{two}</td>
+              <td className="px-4 py-2.5 text-neutral-300">{three}</td>
             </tr>
           ))}
         </tbody>
@@ -291,26 +291,26 @@ export default function TipsPage() {
     const content = TIP_CONTENT[activePage];
     return (
       <div className="min-h-full">
-        <div className="sticky top-0 z-10 bg-neutral-950/95 backdrop-blur-sm border-b border-neutral-800 px-6 py-4">
+        <div className="sticky top-0 z-10 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-[#1f1f1f] px-6 py-4">
           <button
             onClick={() => setActivePage('main')}
-            className="flex items-center gap-2 text-sm text-slate-400 hover:text-red-500 transition-colors mb-3"
+            className="flex items-center gap-2 text-sm text-neutral-500 hover:text-red-500 transition-colors mb-3"
           >
             <ArrowLeft size={15} />
             Back to Tips & Tricks
           </button>
           <div className="flex items-center justify-between gap-4">
             <h1 className="text-lg font-black text-white">{content.title}</h1>
-            <div className="flex items-center rounded-lg border border-neutral-700/60 overflow-hidden text-sm font-semibold">
+            <div className="flex items-center rounded-lg border border-[#2a2a2a] overflow-hidden text-sm font-semibold">
               <button
                 onClick={() => setVendor('trimble')}
-                className={clsx('px-4 py-2 transition-colors', vendor === 'trimble' ? 'bg-red-600 text-white' : 'bg-neutral-800 text-neutral-400 hover:text-neutral-200')}
+                className={clsx('px-4 py-2 transition-colors', vendor === 'trimble' ? 'bg-red-600 text-white' : 'bg-[#161616] text-neutral-400 hover:text-neutral-200')}
               >
                 Trimble
               </button>
               <button
                 onClick={() => setVendor('topcon')}
-                className={clsx('px-4 py-2 transition-colors border-l border-neutral-700/60', vendor === 'topcon' ? 'bg-red-600 text-white' : 'bg-neutral-800 text-neutral-400 hover:text-neutral-200')}
+                className={clsx('px-4 py-2 transition-colors border-l border-[#2a2a2a]', vendor === 'topcon' ? 'bg-red-600 text-white' : 'bg-[#161616] text-neutral-400 hover:text-neutral-200')}
               >
                 Topcon
               </button>
@@ -331,25 +331,25 @@ export default function TipsPage() {
 
   return (
     <div className="min-h-full">
-      <div className="sticky top-0 z-10 bg-neutral-950/95 backdrop-blur-sm border-b border-neutral-800 px-6 py-4">
+      <div className="sticky top-0 z-10 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-[#1f1f1f] px-6 py-4">
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <BookOpen size={18} className="text-red-500" />
             <div>
               <h1 className="text-lg font-black text-white">Tips &amp; Tricks</h1>
-              <p className="text-xs text-slate-400">Operator guides for Precision Grade systems</p>
+              <p className="text-xs text-neutral-500">Operator guides for Precision Grade systems</p>
             </div>
           </div>
-          <div className="flex items-center rounded-lg border border-neutral-700/60 overflow-hidden text-sm font-semibold">
+          <div className="flex items-center rounded-lg border border-[#2a2a2a] overflow-hidden text-sm font-semibold">
             <button
               onClick={() => setVendor('trimble')}
-              className={clsx('px-4 py-2 transition-colors', vendor === 'trimble' ? 'bg-red-600 text-white' : 'bg-neutral-800 text-neutral-400 hover:text-neutral-200')}
+              className={clsx('px-4 py-2 transition-colors', vendor === 'trimble' ? 'bg-red-600 text-white' : 'bg-[#161616] text-neutral-400 hover:text-neutral-200')}
             >
               Trimble
             </button>
             <button
               onClick={() => setVendor('topcon')}
-              className={clsx('px-4 py-2 transition-colors border-l border-neutral-700/60', vendor === 'topcon' ? 'bg-red-600 text-white' : 'bg-neutral-800 text-neutral-400 hover:text-neutral-200')}
+              className={clsx('px-4 py-2 transition-colors border-l border-[#2a2a2a]', vendor === 'topcon' ? 'bg-red-600 text-white' : 'bg-[#161616] text-neutral-400 hover:text-neutral-200')}
             >
               Topcon
             </button>
@@ -360,7 +360,7 @@ export default function TipsPage() {
       <div className="px-6 py-6 space-y-8">
         {/* General topics */}
         <section>
-          <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wider text-neutral-600 mb-4">
             General Topics
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -368,7 +368,7 @@ export default function TipsPage() {
               <button
                 key={topic.id}
                 onClick={() => setActivePage(topic.id)}
-                className="group text-left rounded-2xl overflow-hidden border border-neutral-800 hover:border-red-500/30 transition-all hover:shadow-lg hover:shadow-red-900/10"
+                className="group text-left rounded-2xl overflow-hidden border border-[#1e1e1e] hover:border-red-500/30 transition-all hover:shadow-lg hover:shadow-red-900/20"
               >
                 <div
                   className={clsx('relative p-5', !topic.image && 'bg-gradient-to-br', topic.image ? '' : topic.color)}
@@ -390,8 +390,8 @@ export default function TipsPage() {
                   </div>
                   <h3 className="relative mt-4 text-base font-bold text-white">{topic.title}</h3>
                 </div>
-                <div className="bg-neutral-900/80 px-5 py-3">
-                  <p className="text-xs text-slate-400 leading-relaxed">{topic.description}</p>
+                <div className="bg-[#111111] px-5 py-3">
+                  <p className="text-xs text-neutral-400 leading-relaxed">{topic.description}</p>
                 </div>
               </button>
             ))}
@@ -400,7 +400,7 @@ export default function TipsPage() {
 
         {/* Machine guides */}
         <section>
-          <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wider text-neutral-600 mb-4">
             Machine Operation Guides
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -408,7 +408,7 @@ export default function TipsPage() {
               <button
                 key={guide.id}
                 onClick={() => setActivePage(guide.id)}
-                className="group text-left rounded-2xl overflow-hidden border border-neutral-800 hover:border-red-500/30 transition-all hover:shadow-lg hover:shadow-red-900/10"
+                className="group text-left rounded-2xl overflow-hidden border border-[#1e1e1e] hover:border-red-500/30 transition-all hover:shadow-lg hover:shadow-red-900/20"
               >
                 <div
                   className={clsx('relative p-5', !guide.image && 'bg-gradient-to-br', guide.image ? '' : guide.color)}
@@ -437,8 +437,8 @@ export default function TipsPage() {
                   </div>
                   <h3 className="relative mt-4 text-base font-bold text-white">{guide.title}</h3>
                 </div>
-                <div className="bg-neutral-900/80 px-5 py-3">
-                  <p className="text-xs text-slate-400 leading-relaxed">{guide.description}</p>
+                <div className="bg-[#111111] px-5 py-3">
+                  <p className="text-xs text-neutral-400 leading-relaxed">{guide.description}</p>
                 </div>
               </button>
             ))}
@@ -447,7 +447,7 @@ export default function TipsPage() {
 
         {/* Installation guides */}
         <section>
-          <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-4">
+          <h2 className="text-xs font-semibold uppercase tracking-wider text-neutral-600 mb-4">
             Installation Guides
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -455,7 +455,7 @@ export default function TipsPage() {
               <button
                 key={guide.id}
                 onClick={() => setActivePage(guide.id)}
-                className="group text-left rounded-2xl overflow-hidden border border-neutral-800 hover:border-red-500/30 transition-all hover:shadow-lg hover:shadow-red-900/10"
+                className="group text-left rounded-2xl overflow-hidden border border-[#1e1e1e] hover:border-red-500/30 transition-all hover:shadow-lg hover:shadow-red-900/20"
               >
                 <div
                   className={clsx('relative p-5', !guide.image && 'bg-gradient-to-br', guide.image ? '' : guide.color)}
@@ -477,8 +477,8 @@ export default function TipsPage() {
                   </div>
                   <h3 className="relative mt-4 text-base font-bold text-white">{guide.title}</h3>
                 </div>
-                <div className="bg-neutral-900/80 px-5 py-3">
-                  <p className="text-xs text-slate-400 leading-relaxed">{guide.description}</p>
+                <div className="bg-[#111111] px-5 py-3">
+                  <p className="text-xs text-neutral-400 leading-relaxed">{guide.description}</p>
                 </div>
               </button>
             ))}

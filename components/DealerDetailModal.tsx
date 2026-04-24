@@ -17,7 +17,7 @@ const TYPE_BADGE = {
 
 function MachineSerials({ machine }: { machine: Machine }) {
   return (
-    <div className="rounded-lg bg-neutral-900/90 border border-neutral-800 p-3">
+    <div className="rounded-lg bg-[#111111] border border-[#1e1e1e] p-3">
       <div className="flex items-center gap-2 mb-2">
         <span className={clsx('text-xs font-medium px-2 py-0.5 rounded-full', TYPE_BADGE[machine.type])}>
           {machine.type}
@@ -56,7 +56,7 @@ function MachineSerials({ machine }: { machine: Machine }) {
           </div>
         ))}
         {machine.trainingVisitDate && (
-          <div className="flex justify-between text-xs pt-1 border-t border-neutral-800 mt-1">
+          <div className="flex justify-between text-xs pt-1 border-t border-[#1e1e1e] mt-1">
             <span className="text-neutral-500">Training Visit</span>
             <span className="text-red-500">
               {new Date(machine.trainingVisitDate).toLocaleDateString('en-US', {
@@ -88,9 +88,9 @@ export default function DealerDetailModal({ dealer, onClose }: DealerDetailModal
       />
 
       {/* Modal */}
-      <div className="relative z-10 w-full max-w-2xl max-h-[90vh] flex flex-col bg-neutral-950 border border-neutral-800 rounded-2xl shadow-2xl shadow-black/50 overflow-hidden">
+      <div className="relative z-10 w-full max-w-2xl max-h-[90vh] flex flex-col bg-[#0d0d0d] border border-[#1f1f1f] rounded-2xl shadow-2xl shadow-black/60 overflow-hidden">
         {/* Header */}
-        <div className="flex items-start justify-between px-6 py-5 bg-neutral-900/80 border-b border-neutral-800">
+        <div className="flex items-start justify-between px-6 py-5 bg-[#111111] border-b border-[#1f1f1f]">
           <div>
             <p className="text-xs text-neutral-400 uppercase tracking-wider mb-1">
               Dealer Profile
@@ -117,7 +117,7 @@ export default function DealerDetailModal({ dealer, onClose }: DealerDetailModal
           </div>
           <button
             onClick={onClose}
-            className="rounded-lg p-2 text-neutral-400 hover:bg-neutral-800 hover:text-white transition-colors flex-shrink-0"
+            className="rounded-lg p-2 text-neutral-400 hover:bg-[#161616] hover:text-white transition-colors flex-shrink-0"
           >
             <X size={18} />
           </button>
@@ -163,35 +163,35 @@ export default function DealerDetailModal({ dealer, onClose }: DealerDetailModal
           {/* Parts / Warranty */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {dealer.warrantyParts && (
-              <div className="rounded-xl bg-slate-800/60 border border-slate-700/50 p-4">
+              <div className="rounded-xl bg-[#111111] border border-[#1e1e1e] p-4">
                 <div className="flex items-center gap-2 mb-2">
                   <Wrench size={13} className="text-red-500" />
                   <h4 className="text-xs font-semibold uppercase tracking-wider text-red-500">
                     Warranty Parts
                   </h4>
                 </div>
-                <p className="text-xs text-slate-300 leading-relaxed">{dealer.warrantyParts}</p>
+                <p className="text-xs text-neutral-300 leading-relaxed">{dealer.warrantyParts}</p>
               </div>
             )}
             {dealer.partsOrdered && (
-              <div className="rounded-xl bg-slate-800/60 border border-slate-700/50 p-4">
+              <div className="rounded-xl bg-[#111111] border border-[#1e1e1e] p-4">
                 <div className="flex items-center gap-2 mb-2">
                   <Package size={13} className="text-red-500" />
                   <h4 className="text-xs font-semibold uppercase tracking-wider text-red-500">
                     Parts Ordered
                   </h4>
                 </div>
-                <p className="text-xs text-slate-300 leading-relaxed">{dealer.partsOrdered}</p>
+                <p className="text-xs text-neutral-300 leading-relaxed">{dealer.partsOrdered}</p>
               </div>
             )}
           </div>
         </div>
 
         {/* Footer */}
-        <div className="px-6 py-4 bg-neutral-900/60 border-t border-neutral-800 flex justify-end">
+        <div className="px-6 py-4 bg-[#111111] border-t border-[#1f1f1f] flex justify-end">
           <button
             onClick={onClose}
-            className="px-4 py-2 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-sm text-white font-medium transition-colors"
+            className="px-4 py-2 rounded-lg bg-[#1e1e1e] hover:bg-[#2a2a2a] text-sm text-white font-medium transition-colors"
           >
             Close
           </button>

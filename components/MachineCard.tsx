@@ -38,7 +38,7 @@ export default function MachineCard({ machine, isSelected, onClick }: MachineCar
         'w-full text-left rounded-xl border p-4 transition-all duration-150 group',
         isSelected
           ? 'bg-red-600/10 border-red-500/50 shadow-lg shadow-red-900/20'
-          : `bg-neutral-900/70 border-neutral-800 hover:bg-neutral-900 ${styles.glow}`,
+          : `bg-[#111111] border-[#1e1e1e] hover:bg-[#161616] ${styles.glow}`,
       )}
     >
       <div className="flex items-start justify-between gap-2">
@@ -90,7 +90,7 @@ export default function MachineCard({ machine, isSelected, onClick }: MachineCar
         )}
       </div>
 
-      <div className="mt-3 pt-3 border-t border-neutral-800">
+      <div className="mt-3 pt-3 border-t border-[#1e1e1e]">
         <span className="text-xs text-neutral-500">
           Source: <span className="text-neutral-400">{machine.source}</span>
         </span>

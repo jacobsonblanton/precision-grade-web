@@ -896,7 +896,7 @@ export function StoreModal({ productKey, label, onClose }: StoreModalProps) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* App chrome header */}
-        <div className="flex items-center justify-between px-5 py-4 bg-neutral-950 border-b border-neutral-800 shrink-0">
+        <div className="flex items-center justify-between px-5 py-4 bg-[#0d0d0d] border-b border-[#1f1f1f] shrink-0">
           <button
             onClick={onClose}
             className="flex items-center gap-1.5 text-sm text-neutral-400 hover:text-red-500 transition-colors"
@@ -907,7 +907,7 @@ export function StoreModal({ productKey, label, onClose }: StoreModalProps) {
           <span className="text-sm font-medium text-white">{label}</span>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-lg text-neutral-400 hover:text-white hover:bg-neutral-800 transition-all"
+            className="p-1.5 rounded-lg text-neutral-400 hover:text-white hover:bg-[#161616] transition-all"
           >
             <X size={16} />
           </button>

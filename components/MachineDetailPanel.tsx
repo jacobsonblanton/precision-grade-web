@@ -18,7 +18,7 @@ const TYPE_COLORS = {
 function SerialRow({ label, value }: { label: string; value?: string }) {
   if (!value) return null;
   return (
-    <div className="flex items-start justify-between gap-4 py-2.5 border-b border-neutral-800 last:border-0">
+    <div className="flex items-start justify-between gap-4 py-2.5 border-b border-[#1e1e1e] last:border-0">
       <span className="text-xs text-neutral-400 flex-shrink-0 w-28">{label}</span>
       <span className="font-mono text-xs text-white text-right break-all">{value}</span>
     </div>
@@ -29,9 +29,9 @@ export default function MachineDetailPanel({ machine, onClose }: MachineDetailPa
   const typeColor = TYPE_COLORS[machine.type];
 
   return (
-    <div className="flex flex-col h-full bg-neutral-900/90 border-l border-neutral-800 animate-slide-in">
+    <div className="flex flex-col h-full bg-[#0d0d0d] border-l border-[#1f1f1f] animate-slide-in">
       {/* Header */}
-      <div className="flex items-center justify-between px-5 py-4 border-b border-neutral-800 bg-neutral-900">
+      <div className="flex items-center justify-between px-5 py-4 border-b border-[#1f1f1f] bg-[#0d0d0d]">
         <div>
           <div className="flex items-center gap-2 mb-1">
             <span className={clsx('text-xs font-semibold px-2 py-0.5 rounded-full border', typeColor)}>
@@ -43,7 +43,7 @@ export default function MachineDetailPanel({ machine, onClose }: MachineDetailPa
         </div>
         <button
           onClick={onClose}
-          className="rounded-lg p-1.5 text-neutral-400 hover:bg-neutral-800 hover:text-white transition-colors"
+          className="rounded-lg p-1.5 text-neutral-400 hover:bg-[#161616] hover:text-white transition-colors"
         >
           <X size={16} />
         </button>
@@ -51,7 +51,7 @@ export default function MachineDetailPanel({ machine, onClose }: MachineDetailPa
 
       <div className="flex-1 overflow-y-auto px-5 py-4 space-y-5">
         {/* Machine serial block */}
-        <div className="rounded-xl bg-neutral-900/60 border border-neutral-800 p-4">
+        <div className="rounded-xl bg-[#111111] border border-[#1e1e1e] p-4">
           <div className="flex items-center gap-2 mb-3">
             <Cpu size={14} className="text-red-500" />
             <h3 className="text-xs font-semibold uppercase tracking-wider text-red-500">
@@ -70,7 +70,7 @@ export default function MachineDetailPanel({ machine, onClose }: MachineDetailPa
         </div>
 
         {/* Training */}
-        <div className="rounded-xl bg-neutral-900/60 border border-neutral-800 p-4">
+        <div className="rounded-xl bg-[#111111] border border-[#1e1e1e] p-4">
           <div className="flex items-center gap-2 mb-3">
             <CalendarCheck size={14} className="text-red-500" />
             <h3 className="text-xs font-semibold uppercase tracking-wider text-red-500">
@@ -111,7 +111,7 @@ export default function MachineDetailPanel({ machine, onClose }: MachineDetailPa
 
         {/* Dealer */}
         {machine.dealer && (
-          <div className="rounded-xl bg-neutral-900/60 border border-neutral-800 p-4">
+          <div className="rounded-xl bg-[#111111] border border-[#1e1e1e] p-4">
             <div className="flex items-center gap-2 mb-3">
               <MapPin size={14} className="text-red-500" />
               <h3 className="text-xs font-semibold uppercase tracking-wider text-red-500">
@@ -142,7 +142,7 @@ export default function MachineDetailPanel({ machine, onClose }: MachineDetailPa
         )}
 
         {/* Data source */}
-        <div className="rounded-xl bg-neutral-900/60 border border-neutral-800 p-4">
+        <div className="rounded-xl bg-[#111111] border border-[#1e1e1e] p-4">
           <div className="flex items-center gap-2 mb-2">
             <Radio size={14} className="text-red-500" />
             <h3 className="text-xs font-semibold uppercase tracking-wider text-red-500">

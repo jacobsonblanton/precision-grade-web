@@ -76,7 +76,7 @@ export default function SalesPage() {
       {/* Main content */}
       <div className="flex flex-col flex-1 min-w-0">
         {/* Header */}
-        <div className="sticky top-0 z-10 bg-neutral-950/95 backdrop-blur-sm border-b border-neutral-800 px-6 py-4">
+        <div className="sticky top-0 z-10 bg-[#0a0a0a]/95 backdrop-blur-sm border-b border-[#1f1f1f] px-6 py-4">
           <div className="flex items-center justify-between gap-4">
             <div>
               <h1 className="text-lg font-black text-white tracking-tight">
@@ -96,7 +96,7 @@ export default function SalesPage() {
                   'flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-all',
                   showMap
                     ? 'bg-red-600 text-white'
-                    : 'bg-neutral-800 text-neutral-300 hover:bg-neutral-700 border border-neutral-700/60',
+                    : 'bg-[#161616] text-neutral-300 hover:bg-[#1e1e1e] border border-[#2a2a2a]',
                 )}
                 title="Toggle alpha dealer map"
               >
@@ -106,7 +106,7 @@ export default function SalesPage() {
               </button>
               <button
                 onClick={load}
-                className="p-2 rounded-lg text-neutral-400 hover:bg-neutral-800 hover:text-white transition-colors"
+                className="p-2 rounded-lg text-neutral-400 hover:bg-[#161616] hover:text-white transition-colors"
                 title="Refresh"
               >
               <RefreshCw size={15} className={loading ? 'animate-spin' : ''} />
@@ -137,7 +137,7 @@ export default function SalesPage() {
               <button
                 key={d.id}
                 onClick={() => setSelectedDealer(d)}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-neutral-800/60 border border-neutral-700/50 hover:border-red-500/40 hover:bg-neutral-800 text-xs font-medium text-neutral-300 transition-all"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#161616] border border-[#2a2a2a] hover:border-red-500/40 hover:bg-[#1e1e1e] text-xs font-medium text-neutral-300 transition-all"
               >
                 <MapPin size={10} className="text-red-500" />
                 {d.name}
@@ -163,9 +163,9 @@ export default function SalesPage() {
 
           {!loading && machines.length === 0 && (
             <div className="flex flex-col items-center justify-center py-16 text-center">
-              <Layers size={32} className="text-slate-700 mb-3" />
-              <p className="text-slate-400 font-medium">No machines in your territory</p>
-              <p className="text-xs text-slate-600 mt-1">
+              <Layers size={32} className="text-neutral-700 mb-3" />
+              <p className="text-neutral-400 font-medium">No machines in your territory</p>
+              <p className="text-xs text-neutral-600 mt-1">
                 Territory: {user?.territory ?? 'Not assigned'}
               </p>
             </div>
@@ -181,10 +181,10 @@ export default function SalesPage() {
                     <h2 className={clsx('text-sm font-bold uppercase tracking-wider', color)}>
                       {label}
                     </h2>
-                    <span className="text-xs text-neutral-600 bg-neutral-800/60 px-2 py-0.5 rounded-full border border-neutral-700/40">
+                    <span className="text-xs text-neutral-600 bg-[#161616] px-2 py-0.5 rounded-full border border-[#2a2a2a]">
                       {group.length} machine{group.length !== 1 ? 's' : ''}
                     </span>
-                    <div className="flex-1 h-px bg-neutral-800" />
+                    <div className="flex-1 h-px bg-[#1f1f1f]" />
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3">
                     {group.map((machine) => (
@@ -208,7 +208,7 @@ export default function SalesPage() {
 
       {/* Side panel */}
       {panelOpen && (
-        <div className="hidden lg:flex flex-col w-96 border-l border-neutral-800">
+        <div className="hidden lg:flex flex-col w-96 border-l border-[#1f1f1f]">
           <MachineDetailPanel
             machine={selectedMachine!}
             onClose={() => setSelectedMachine(null)}

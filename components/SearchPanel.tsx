@@ -60,13 +60,13 @@ export default function SearchPanel({ onDealerSelect, onMachineSelect }: SearchP
     !loading && query && !hasResults;
 
   return (
-    <div className="flex flex-col h-full bg-neutral-900/90 border-l border-neutral-800">
+    <div className="flex flex-col h-full bg-[#0d0d0d] border-l border-[#1f1f1f]">
       {/* Header */}
-      <div className="px-5 py-4 border-b border-neutral-800 bg-neutral-900">
+      <div className="px-5 py-4 border-b border-[#1f1f1f] bg-[#0d0d0d]">
         <h2 className="text-sm font-bold text-white mb-3">Search</h2>
 
         {/* Mode toggle */}
-        <div className="flex gap-1 bg-neutral-950/60 p-1 rounded-lg mb-3">
+        <div className="flex gap-1 bg-[#0a0a0a] p-1 rounded-lg mb-3">
           <button
             onClick={() => { setMode('dealer'); clearSearch(); }}
             className={clsx(
@@ -106,7 +106,7 @@ export default function SearchPanel({ onDealerSelect, onMachineSelect }: SearchP
                 ? 'Dealer name or city...'
                 : 'Serial number...'
             }
-            className="w-full bg-neutral-950/80 border border-neutral-700/60 rounded-lg pl-9 pr-9 py-2 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-red-500/50 focus:ring-1 focus:ring-red-500/20"
+            className="w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-lg pl-9 pr-9 py-2 text-xs text-white placeholder-neutral-600 focus:outline-none focus:border-red-500/50 focus:ring-1 focus:ring-red-500/20"
           />
           {query && (
             <button
@@ -141,7 +141,7 @@ export default function SearchPanel({ onDealerSelect, onMachineSelect }: SearchP
           <button
             key={dealer.id}
             onClick={() => onDealerSelect(dealer)}
-            className="w-full text-left rounded-xl bg-neutral-900/60 border border-neutral-800 p-4 hover:bg-neutral-800/60 hover:border-red-500/30 transition-all group"
+            className="w-full text-left rounded-xl bg-[#111111] border border-[#1e1e1e] p-4 hover:bg-[#161616] hover:border-red-500/30 transition-all group"
           >
             <div className="flex items-start justify-between gap-2">
               <div className="flex items-center gap-2">
@@ -152,7 +152,7 @@ export default function SearchPanel({ onDealerSelect, onMachineSelect }: SearchP
               </div>
               <ChevronRight size={14} className="text-neutral-600 group-hover:text-red-500 flex-shrink-0 mt-0.5 transition-colors" />
             </div>
-            <p className="text-xs text-slate-400 mt-1 ml-5">{dealer.location}</p>
+            <p className="text-xs text-neutral-400 mt-1 ml-5">{dealer.location}</p>
             <p className="text-xs text-neutral-500 ml-5">
               {dealer.machines.length} machine{dealer.machines.length !== 1 ? 's' : ''} &middot; {dealer.territory}
             </p>
@@ -164,7 +164,7 @@ export default function SearchPanel({ onDealerSelect, onMachineSelect }: SearchP
           <button
             key={machine.id}
             onClick={() => onMachineSelect(machine)}
-            className="w-full text-left rounded-xl bg-neutral-900/60 border border-neutral-800 p-4 hover:bg-neutral-800/60 hover:border-red-500/30 transition-all group"
+            className="w-full text-left rounded-xl bg-[#111111] border border-[#1e1e1e] p-4 hover:bg-[#161616] hover:border-red-500/30 transition-all group"
           >
             <div className="flex items-start justify-between gap-2">
               <div className="flex items-center gap-2">
@@ -176,9 +176,9 @@ export default function SearchPanel({ onDealerSelect, onMachineSelect }: SearchP
               <ChevronRight size={14} className="text-neutral-600 group-hover:text-red-500 flex-shrink-0 mt-0.5 transition-colors" />
             </div>
             <div className="mt-1 ml-5 flex items-center gap-2 flex-wrap">
-              <span className="text-xs text-slate-400">{machine.type}</span>
-              <span className="text-slate-600">·</span>
-              <span className="text-xs text-slate-400">{machine.dealer?.name}</span>
+              <span className="text-xs text-neutral-400">{machine.type}</span>
+              <span className="text-neutral-600">·</span>
+              <span className="text-xs text-neutral-400">{machine.dealer?.name}</span>
             </div>
             {machine.ecsSerial && (
               <p className="text-xs font-mono text-neutral-500 ml-5 mt-0.5">
