@@ -16,12 +16,14 @@
     "jose": "^5.2.4",
     "leaflet": "^1.9.4",
     "lucide-react": "^0.363.0",
-    "msnodesqlv8": "^5.1.8",
-    "mssql": "^12.2.1",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-leaflet": "^4.2.1"
+  },
+  "optionalDependencies": {
+    "msnodesqlv8": "^5.1.8",
+    "mssql": "^12.2.1"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
