@@ -161,9 +161,9 @@ export default function KitsPage() {
       }
     }
     // sort each dealer's sales newest first
-    for (const d of map.values()) {
+    Array.from(map.values()).forEach((d) => {
       d.sales.sort((a, b) => parseDate(b.orderDate).getTime() - parseDate(a.orderDate).getTime());
-    }
+    });
     return map;
   }, [typedSales]);
 
