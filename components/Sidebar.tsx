@@ -38,10 +38,16 @@ const salesLinks = [
 
 const adminLinks = [
   { href: '/dashboard/kits', label: 'Precision Grade Kits', icon: Layers },
+  { href: '/dashboard/orders', label: 'Orders', icon: ShoppingCart },
   { href: '/dashboard/sales', label: 'Sales Territory', icon: LayoutDashboard },
   { href: '/dashboard/trainer', label: 'Trainer Dashboard', icon: HardHat },
   { href: '/dashboard/tips', label: 'Tips & Tricks', icon: BookOpen },
   { href: '/dashboard/components', label: 'Components', icon: Package },
+];
+
+const dealerLinks = [
+  { href: '/dashboard/dealer', label: 'My Orders', icon: Package },
+  { href: '/dashboard/components', label: 'Order Parts', icon: Layers },
 ];
 
 export default function Sidebar({ user }: SidebarProps) {
@@ -63,7 +69,11 @@ export default function Sidebar({ user }: SidebarProps) {
     localStorage.setItem('pg-theme', next);
   }
 
-  const links = user.role === 'admin' ? adminLinks : user.role === 'trainer' ? trainerLinks : salesLinks;
+  const links =
+    user.role === 'admin' ? adminLinks :
+    user.role === 'trainer' ? trainerLinks :
+    user.role === 'dealer' ? dealerLinks :
+    salesLinks;
 
   async function handleLogout() {
     await fetch('/api/auth/logout', { method: 'POST' });
@@ -90,7 +100,7 @@ export default function Sidebar({ user }: SidebarProps) {
         <p className="text-[13px] font-semibold text-white truncate leading-tight">{user.displayName}</p>
         <span className="mt-1.5 inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-semibold bg-red-600/20 text-red-400 border border-red-500/30">
           <Cpu size={9} />
-          {user.role === 'admin' ? 'Admin' : user.role === 'trainer' ? 'Trainer' : `Sales`}
+          {user.role === 'admin' ? 'Admin' : user.role === 'trainer' ? 'Trainer' : user.role === 'dealer' ? 'Dealer' : 'Sales'}
         </span>
       </div>
 

@@ -1,6 +1,7 @@
 'use client';
 
-import { ShoppingCart, Trash2, X, Download } from 'lucide-react';
+import { useState } from 'react';
+import { ShoppingCart, Trash2, X, Download, Send, CheckCircle, Loader2 } from 'lucide-react';
 import { useCart, CartItem } from '@/lib/cartContext';
 import { lbxToTrimble } from '@/lib/partNumberMapping';
 
@@ -22,6 +23,34 @@ function downloadCartCsv(items: CartItem[]) {
 
 export default function CartPage() {
   const { items, updateQty, removeItem, clearCart } = useCart();
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState<string | null>(null);
+  const [submitError, setSubmitError] = useState('');
+
+  async function handleSubmitOrder() {
+    setSubmitting(true);
+    setSubmitError('');
+    try {
+      const orderItems = items.map((item) => ({
+        name: item.name,
+        partNumber: item.partNumber,
+        quantity: item.quantity,
+      }));
+      const res = await fetch('/api/orders', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: orderItems }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? 'Order failed.');
+      setSubmitted(data.orderNumber);
+      clearCart();
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : 'Order failed.');
+    } finally {
+      setSubmitting(false);
+    }
+  }
 
   // Group items by product
   const grouped = items.reduce<Record<string, typeof items>>((acc, item) => {
@@ -133,16 +162,39 @@ export default function CartPage() {
           </div>
         ))}
 
+        {submitError && (
+          <div className="rounded-lg bg-red-900/20 border border-red-500/30 px-4 py-3 text-sm text-red-400">
+            {submitError}
+          </div>
+        )}
+
         {items.length > 0 && (
           <div className="rounded-xl bg-[#111111] border border-[#1e1e1e] px-5 py-4 flex items-center justify-between">
             <div>
               <p className="text-xs text-neutral-500 uppercase tracking-wider">Total Items</p>
               <p className="text-2xl font-black text-white mt-0.5">{totalItems}</p>
             </div>
-            <button className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors">
-              <ShoppingCart size={15} />
-              Submit Order Request
+            <button
+              onClick={handleSubmitOrder}
+              disabled={submitting}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-red-600 hover:bg-red-500 disabled:opacity-50 disabled:cursor-not-allowed text-white text-sm font-semibold transition-colors"
+            >
+              {submitting ? <Loader2 size={15} className="animate-spin" /> : <Send size={15} />}
+              {submitting ? 'Placing Order...' : 'Submit Order Request'}
             </button>
+          </div>
+        )}
+
+        {submitted && (
+          <div className="rounded-xl bg-[#111111] border border-green-500/30 px-5 py-6 flex flex-col items-center text-center gap-3">
+            <CheckCircle size={32} className="text-green-500" />
+            <div>
+              <p className="text-white font-bold text-base">Order Placed!</p>
+              <p className="text-neutral-400 text-sm mt-0.5">
+                Order <span className="text-red-400 font-mono font-semibold">{submitted}</span> has been submitted.
+              </p>
+              <p className="text-neutral-600 text-xs mt-1">You&apos;ll receive a confirmation and can track your order status on your dashboard.</p>
+            </div>
           </div>
         )}
       </div>

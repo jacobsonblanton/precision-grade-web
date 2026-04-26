@@ -1,4 +1,4 @@
-export type UserRole = 'trainer' | 'salesperson' | 'admin';
+export type UserRole = 'trainer' | 'salesperson' | 'admin' | 'dealer';
 export type MachineType = '2D MG' | '2D MC' | '3D';
 export type DataSource = 'LBX-Topcon' | 'RemoteCARE' | 'LBX-Trimble';
 
@@ -10,6 +10,29 @@ export interface User {
   role: UserRole;
   territory?: string;
   displayName: string;
+  dealerOrgNo?: string;
+}
+
+export type OrderStatus = 'Pending' | 'Processing' | 'Shipped' | 'Complete' | 'Cancelled';
+
+export interface OrderItem {
+  name: string;
+  partNumber?: string;
+  quantity: number;
+  trimblePartNumber?: string;
+}
+
+export interface Order {
+  id: string;
+  orderNumber: string;
+  dealerUsername: string;
+  dealerName: string;
+  dealerOrgNo?: string;
+  status: OrderStatus;
+  items: OrderItem[];
+  notes?: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface Machine {
@@ -50,6 +73,7 @@ export interface AuthPayload {
   role: UserRole;
   territory?: string;
   displayName: string;
+  dealerOrgNo?: string;
   iat?: number;
   exp?: number;
 }

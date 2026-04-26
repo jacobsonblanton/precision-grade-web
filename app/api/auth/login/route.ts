@@ -35,6 +35,7 @@ export async function POST(req: NextRequest) {
       role: user.role,
       territory: user.territory,
       displayName: user.displayName,
+      dealerOrgNo: user.dealerOrgNo,
     });
 
     const res = NextResponse.json({

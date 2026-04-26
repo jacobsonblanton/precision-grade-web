@@ -43,6 +43,34 @@ const SEED_USERS = [
     displayName: 'Chris Evans',
     territory: 'Mountain West',
   },
+  // Admin users
+  {
+    id: 5,
+    username: 'jblanton',
+    email: 'jacobblanton32@yahoo.com',
+    password: 'LBX@admin2024!',
+    role: 'admin' as const,
+    displayName: 'Jacob Blanton',
+    territory: undefined,
+  },
+  {
+    id: 6,
+    username: 'rscott',
+    email: 'rscott@lbxco.com',
+    password: 'LBX@admin2024!',
+    role: 'admin' as const,
+    displayName: 'Randall Scott',
+    territory: undefined,
+  },
+  {
+    id: 7,
+    username: 'jpiekema',
+    email: 'jpiekema@lbxco.com',
+    password: 'LBX@admin2024!',
+    role: 'admin' as const,
+    displayName: 'Jason Piekema',
+    territory: undefined,
+  },
 ];
 
 async function seedUsers(): Promise<User[]> {
